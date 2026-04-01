@@ -1,26 +1,35 @@
 # 🧱 ARCHITECTURE: Repository Map
 
-Welcome to the internal blueprint of the **Claude Source Hub**. This guide helps you navigate our curated metadata and research synthesis.
+Welcome to the internal blueprint of the **CLAUDE SOURCE HUB**. This guide helps you navigate our curated metadata and research synthesis.
 
 ## 🧭 Directory Structure
 
-### 🛡️ [Showcase/](file:///Users/mkazi/Claude-Source-Hub/Showcase/)
-The heart of the Hub. High-fidelity architectural deep-dives.
-- **[Architecture/](file:///Users/mkazi/Claude-Source-Hub/Showcase/Architecture/):** Synthesized research on hidden systems (BUDDY, KAIROS, ULTRAPLAN).
-- **[Prompts/](file:///Users/mkazi/Claude-Source-Hub/Showcase/Prompts/):** A curated library of agentic identity blueprints (Anthropic only).
-- **[Project_Claw/](file:///Users/mkazi/Claude-Source-Hub/Showcase/Project_Claw/):** Documentation of the community's rapid "Clean-Room" evolution.
+### 🛡️ [ARCHITECTURE/](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/)
+The heart of the Hub. High-fidelity architectural deep-dives synthesized from the blueprints.
 
-### 📜 [STORY.md](file:///Users/mkazi/Claude-Source-Hub/STORY.md)
-The foundational narrative of the **2.1.84 Registry Incident** and how the ecosystem survives today.
+### 📜 [PROMPTS/](file:///Users/mkazi/Claude-Source-Hub/PROMPTS/)
+A curated library of agentic identity blueprints (Anthropic only).
 
-### 🚀 [GTM/](file:///Users/mkazi/Claude-Source-Hub/GTM/)
+### 🚀 [GROWTH/](file:///Users/mkazi/Claude-Source-Hub/GROWTH/)
 The Go-To-Market suite for sharing and scaling the Hub's impact on LinkedIn and X.com.
 
-### 📂 [data/](file:///Users/mkazi/Claude-Source-Hub/data/) & [docs/](file:///Users/mkazi/Claude-Source-Hub/docs/)
-External metadata and archived research summaries.
+### 📂 [DATA/](file:///Users/mkazi/Claude-Source-Hub/DATA/) & [DOCUMENTATION/](file:///Users/mkazi/Claude-Source-Hub/DOCUMENTATION/)
+External metadata and archived documentation guides.
 
 ### 🤫 [.ghost_research/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/)
 The hidden research workspace for **Kazi's Agent Army**. It serves as the internal "Scanning Engine" for new repository clones.
+
+---
+
+## 🧬 Research Foundation
+We synthesize intelligence from the following 7 foundational repositories:
+- **[asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)**
+- **[NanmiCoder/claude-code-haha](https://github.com/NanmiCoder/claude-code-haha)**
+- **[leaked-claude-code/leaked-claude-code](https://github.com/leaked-claude-code/leaked-claude-code)**
+- **[GitHpriyanshu23/Claude-code-leaks](https://github.com/GitHpriyanshu23/Claude-code-leaks)**
+- **[soufianebouaddis/claude-code](https://github.com/soufianebouaddis/claude-code)**
+- **[instructkr/claw-code](https://github.com/instructkr/claw-code)**
+- **[claw-cli/claw-code-rust](https://github.com/claw-cli/claw-code-rust)**
 
 ---
 

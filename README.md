@@ -1,4 +1,4 @@
-# Claude Source Hub 🛡️
+# CLAUDE SOURCE HUB 🛡️
 
 > **The Definitive, Metadata-Only Archive of the Claude Code Ecosystem.**
 > Curated and Maintained by **Kazi's Agent Army**.
@@ -12,33 +12,33 @@ Discover the origins of the leak, the 48-hour mobilization, and the vision for t
 
 ### 🏛️ THE ARCHITECT'S ASCENSION (Golden Gems)
 World-class deep-dives into the architecture behind the blueprints.
-- **[🏗️ AGENT HARNESS](file:///Users/mkazi/Claude-Source-Hub/Showcase/Architecture/AGENT_HARNESS.md):** The 8-layer unified runtime and modular crates.
-- **[⚙️ TOOL ECONOMICS](file:///Users/mkazi/Claude-Source-Hub/Showcase/Architecture/TOOL_ECONOMICS.md):** Schema-driven tool discovery and MCP integration.
-- **[🎨 INK TERMINAL UX](file:///Users/mkazi/Claude-Source-Hub/Showcase/Architecture/INK_TERMINAL_UX.md):** High-fidelity React-for-CLI rendering principles.
-- **[🎭 AGENT COLLEAGUE UI](file:///Users/mkazi/Claude-Source-Hub/Showcase/Architecture/AGENT_COLLEAGUE_UI.md):** The color-coded persona system (Amethyst, Cinnabar, Emerald).
+- **[🏗️ AGENT HARNESS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_HARNESS.md):** The 8-layer unified runtime and modular crates.
+- **[⚙️ TOOL ECONOMICS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md):** Schema-driven tool discovery and MCP integration.
+- **[🎨 INK TERMINAL UX](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/INK_TERMINAL_UX.md):** High-fidelity React-for-CLI rendering principles.
+- **[🎭 AGENT COLLEAGUE UI](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_COLLEAGUE_UI.md):** The color-coded persona system (Amethyst, Cinnabar, Emerald).
 
 ---
 
-## 🧭 Navigation
+## 🧭 NAVIGATION
 - **[🧱 ARCHITECTURE Map](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md):** The Hub's internal directory blueprint.
 - **[🤝 CONTRIBUTING](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md):** Guidelines for metadata-only research.
-- **[🚀 GTM Suite](file:///Users/mkazi/Claude-Source-Hub/GTM/):** Scaling the Hub on LinkedIn and X.com.
+- **[🚀 GROWTH Suite](file:///Users/mkazi/Claude-Source-Hub/GROWTH/):** Scaling the Hub on LinkedIn and X.com.
 - **[🤫 .ghost_research/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
 
 ---
 
-## 📈 Star History
+## 📈 STAR HISTORY
 [![Star History Chart](https://api.star-history.com/svg?repos=mk-knight23/Claude-Source-Hub&type=Date)](https://star-history.com/#mk-knight23/Claude-Source-Hub&Date)
 
 ---
 
-## 🎨 Global Showcase
+## 🎨 GLOBAL SHOWCASE
 [![Ecosystem: Active](https://img.shields.io/badge/Ecosystem-Active-brightgreen)](https://github.com/mk-knight23/Claude-Source-Hub)
 [![Status: Curated](https://img.shields.io/badge/Status-Curated-blue)](LICENSE)
 [![Governance: Agentic](https://img.shields.io/badge/Governance-Agentic-orange)](CONTRIBUTING.md)
 
 ---
-*Synthesized by ORACLE and PIXEL for the Claude Source Hub.*
+*Synthesized by ORACLE and PIXEL for the CLAUDE SOURCE HUB.*
 This repository is autonomously curated by a fleet of 10 specialized intelligence agents:
 
 | Agent | Role | Expertise |
