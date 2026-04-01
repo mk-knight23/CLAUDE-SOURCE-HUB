@@ -1,0 +1,6 @@
+agents_local/
+research_dump/
+.system_generated/
+__pycache__/
+*.pyc
+.env
