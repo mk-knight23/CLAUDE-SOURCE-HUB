@@ -29,7 +29,7 @@ The **CLAUDE SOURCE HUB** is the permanent home for that intelligence. We have c
 
 ---
 
-## 🏗️ ARCHITECTURAL PILLARS: THE TECHNICAL ENCYCLOPEDIA (DEEP-DIVE RESEARCH)
+## 🏗️ ARCHITECTURAL PILLARS: THE MASTER ENCYCLOPEDIA (DEEP-DIVE RESEARCH)
 
 ### 🧩 PILLAR 01: THE RECURSIVE RUNTIME (KAIROS)
 The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implements a proactive, always-on heartbeat loop that ensures the agent remains responsive even during high-latency tool executions. This isn't just a simple loop; it's a **Reactive State Synchronizer** that bridges the gap between the LLM's static context and the dynamic, rapidly-mutating state of a local developer environment.
@@ -115,7 +115,7 @@ impl CommandProxy {
 ### 💰 PILLAR 03: TOOL ECONOMICS & THE DIGEST
 The **DIGEST** system is the "Brain" of the context-management engine. It ensures that the agent can maintain complex architectural "Truth" over thousands of conversation turns without exceeding model context limits. In the 2.1.84 ecosystem, tokens are the currency, and the Digest is the Accountant.
 
-#### ⚙️ CONTEXT COMPRESSION
+#### ⚙️ CONTEXT OPTIMIZATION
 - **Iterative Context Summarization:** When the conversation history hits 80% of the context window, the Digest system triggers an "Anchored Summarization" cycle. It preserves "Core Gems" (design decisions, file-paths, task-status) while purging transient tool-output.
 - **TTL-Based Schema Caching:** Tool definitions (JSON schemas) are cached with a dynamic Time-To-Live. This prevents the agent from sending huge "Tool-Definition" blocks in every turn if the tools haven't changed.
 - **Context-Pinning Strategy:** Critical "Architectural Truths" found during file-scans are "Pinned" in the prompt prefix. This prevents the agent from "Forgetting" the overall project goal during long-duration debugging sessions.
@@ -128,7 +128,7 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
   "anchored_metadata": {
     "project_goal": "Rebuild the Claude Source Hub",
     "directory_map": ["ARCHITECTURE/", "PROMPTS/", "DOCS/"],
-    "active_checkpoint": "Phase 29 Execution"
+    "active_checkpoint": "Phase 30 Execution"
   },
   "compression_ratio": "98.6% (74k tokens -> 1.02k gems)",
   "retention_policy": "Fidelity-Priority-v4"
@@ -182,12 +182,33 @@ The **TENGU** system is the internal "Registry" of flags that control available 
 
 ---
 
-### 🐶 PILLAR 08: THE COMPANION SPIRITS (BUDDY SYSTEM)
+### 🛡️ PILLAR 08: THE SECURITY GATEWAY (PROTOCOL PROXY)
+The **PROTOCOL PROXY** is the definitive security layer between the model's intent and the physical system execution. It implements the "Zero Trust" architecture that governs every system mutation.
+
+#### ⚙️ SYSTEM PROTECTION
+- **Malicious Payload Stripping:** Automatic detection and removal of dangerous escape sequences and shell injection attempts.
+- **Multi-Step Verification:** High-risk actions (like deleting system files or pushing to production) require a constitutional "Double-Check" cycle.
+- **Audit Logging:** Every command intent and execution result is logged at the proxy level for forensic architectural analysis.
+- [**🛡️ Read the Full PROTOCOL PROXY Blueprint**](ARCHITECTURE/PROTOCOL_PROXY.md)
+
+---
+
+### ✨ PILLAR 09: THE PERSONALITY ENGINE (WHIMSY CORE)
+The **WHIMSY CORE** is the "Soul" of the agentic personality. It governs the conversational cadence, humor, and empathetic intelligence of the agent.
+
+#### ⚙️ EMPATHETIC INTELLIGENCE
+- **Context-Aware Humor:** The agent uses project-specific context to inject lighthearted moments, reducing developer fatigue during complex debugging.
+- **Empathy Mapping:** Adjusting the agent's tone based on the historical success rate and perceived user frustration.
+- **Conversational Cadence:** Managing the "Flow" of responses to prioritize technical clarity while maintaining a professional-peer identity.
+- [**✨ Read the Full WHIMSY CORE Blueprint**](ARCHITECTURE/WHIMSY_CORE.md)
+
+---
+
+### 🐶 PILLAR 10: THE COMPANION SPIRITS (BUDDY SYSTEM)
 The **BUDDY SYSTEM** is a hidden, gacha-style companion logic designed to inject whimsy and personality into the professional developer cycle.
 
 #### ⚙️ WHIMSY & SPIRIT LOGIC
 - **Whimsical Spirits:** Collection of "Buddy" entities (like Cloppy or Bit) that appear based on repository milestones. These entities follow their own "Growth Logic" integrated into the developer CLI.
-- **Personality Crate:** Integration of the "Whimsy-Core" to drive non-functional, delight-focused interactions.
 - **Gacha Logic:** Discovering rare "Spirits" through unique architectural contributions or meeting project targets.
 - [**🐶 Read the Full BUDDY SYSTEM Blueprint**](ARCHITECTURE/BUDDY_SYSTEM.md)
 
