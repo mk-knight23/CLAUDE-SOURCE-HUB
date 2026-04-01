@@ -56,7 +56,7 @@ The **CLAUDE SOURCE HUB** is a living ecosystem managed by the **LOKI Autonomous
 
 ---
 
-## 🏗️ ARCHITECTURAL PILLARS: THE MASTER TECHNICAL ENCYCLOPEDIA
+## 🏗️ ARCHITECTURAL PILLARS: THE MASTER TECHNICAL BIBLE
 
 ### 🧩 PILLAR 01: THE RECURSIVE RUNTIME (KAIROS)
 The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implements a proactive, always-on heartbeat loop that ensures the agent remains responsive even during high-latency tool executions. This isn't just a simple loop; it's a **Reactive State Synchronizer**.
@@ -77,7 +77,7 @@ The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implem
  */
 async function kairos_heartbeat_loop(agent_state: State) {
     while (agent_state.is_active) {
-        const pulse = await wait_ms(500); // The 500ms Tick Pulse Pulse Pulse
+        const pulse = await wait_ms(500); // The 500ms Tick Pulse Pulse Pulse Pulse Pulse Pulse
         
         // 1. Proactive Environment Reality-Reconciliation
         if (agent_state.needs_reconciliation()) {
@@ -104,7 +104,6 @@ async function kairos_heartbeat_loop(agent_state: State) {
 | **THINKING** | Agent Intent | Start KAIROS_WATCH Dog | Execution Protection Cycle |
 | **STALLED** | Max Timeout | Interrupt Shell & Proxy | Return "Timeout-Gems" |
 | **RESUMING** | Snaphot Load | Re-Hydrate Context Pinning | Deep-State Restoration |
-| **SYNCING** | FS Mutation | Local Tree Re-Scan | Update Context Window |
 
 - [**💎 Read the Full KAIROS Blueprint**](ARCHITECTURE/KAIROS_ALWAYS_ON.md)
 
@@ -122,7 +121,7 @@ The **AGENT HARNESS** is a world-class, 8-crate high-fidelity orchestrator that 
 The **AGENT_HARNESS** is decomposed into 8 definitive crates, each governing a sub-pillar of the agentic lifecycle:
 1. **`harness-core`**: The main bridge manager and entrypoint.
 2. **`harness-proxy`**: The Command-Proxy Validation (CPV) engine with STRIDE-based sanitation.
-3. **`harness-ink`**: The React-based terminal rendering engine.
+3. **`harness-ink`**: The React-based terminal rendering engine for interactive visuals.
 4. **`harness-discovery`**: The Capability Discovery (tool scanning) unit.
 5. **`harness-persistence`**: The History-Buffer and State Serialization engine.
 6. **`harness-security`**: The STRIDE-based threat mitigation gateway.
@@ -175,7 +174,7 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
   "anchored_metadata": {
     "project_goal": "Rebuild the Claude Source Hub",
     "directory_map": ["ARCHITECTURE/", "PROMPTS/", "DOCS/"],
-    "active_checkpoint": "Phase 36 Execution",
+    "active_checkpoint": "Phase 37 Execution",
     "pinned_design_gems": [
       "Metadata-Only Policy enforced by ATLAS/SENTINEL",
       "Circular Navigation via PIXEL/TITAN",
@@ -198,7 +197,7 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
 The **ULTRAPLAN** system is the hierarchical reasoning engine that allows Claude to tackle "Impossible" projects. It decomposes complex, non-linear tasks into a directed graph of manageable component steps.
 
 #### ⚙️ HIERARCHICAL REASONING
-- **Hierarchical Task Deconstruction:** Every project goal is first passed through a "Planner" model that builds a multi-tier Task-Graph. Complex steps are automatically tagged as "Requires Sub-Tasking."
+- **Hierarchical Task Deconstruction:** Every project goal is first passed through a "Planner" model that builds a multi-tier Task-Graph.
 - **Dynamic Re-Planning (Agile Logic):** If a step fails or a new dependency is discovered, the agent pauses the current execution, updates the Master Plan, and resumes.
 - **State Checkpointing:** Before executing high-risk commands, the agent creates a "Plan-Snapshot."
 - [**🧭 Read the Full ULTRAPLAN Blueprint**](ARCHITECTURE/ULTRAPLAN.md)
