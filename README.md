@@ -22,7 +22,12 @@ World-class deep-dives into the architecture behind the blueprints.
 ## 🧭 NAVIGATION
 - **[🧱 ARCHITECTURE Map](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md):** The Hub's internal directory blueprint.
 - **[🤝 CONTRIBUTING](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md):** Guidelines for metadata-only research.
-- **[🚀 GROWTH Suite](file:///Users/mkazi/Claude-Source-Hub/GROWTH/):** Scaling the Hub on LinkedIn and X.com.
+### 🚀 GROWTH Suite
+Scaling systems for the global developer community.
+- [**🧊 GMAIL OUTREACH**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/GMAIL_TEMPLATE.md): High-stakes strategic outreach.
+- [**🧵 X / TWITTER STRATEGY**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/X_THREAD.md): Deep-dive architectural threads.
+- [**🚀 LINKEDIN ANNOUNCEMENT**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/LINKEDIN_POST.md): Professional high-impact post.
+- [**🤖 REDDIT INFILTRATION**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_STRATEGY.md): Subreddit-specific technical teardowns.
 - **[🤫 .ghost_research/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
 
 ---
