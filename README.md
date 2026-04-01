@@ -29,14 +29,15 @@ The **CLAUDE SOURCE HUB** is the permanent home for that intelligence. We have c
 
 ---
 
-## 🏗️ ARCHITECTURAL PILLARS: THE DEFINITIVE ENCYCLOPEDIA
+## 🏗️ ARCHITECTURAL PILLARS: THE TECHNICAL BIBLE (DEEP-DIVE)
 
 ### 🧩 PILLAR 01: THE RECURSIVE RUNTIME (KAIROS)
 The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implements a proactive, always-on heartbeat loop that ensures the agent remains responsive even during high-latency tool executions. This isn't just a loop; it's a **State Synchronizer** that bridges the gap between the LLM's static context and the dynamic state of the local terminal.
-- **Active Ticking:** A 500ms internal pulse for status synchronization, ensuring that the model's "mental model" of the environment stays accurate even across 100+ turns.
+- **Active Ticking:** A 500ms internal pulse for status synchronization, ensuring that the model's "mental model" of the environment stays accurate.
 - **State Persistence:** Real-time serialization of cross-session turn-states. Every command, output, and thought is captured in a high-fidelity "Journal."
 - **Self-Healing:** Automatic detection and recovery of stalled tool-calls. If a command hangs, KAIROS initiates a constitutional timeout-relaunch.
 - **Recursive Reasoning:** The system can trigger "Think-Steps" internally without direct user input, allowing for autonomous troubleshooting.
+- **Architecture Teardown:** The 2.1.84 KAIROS crate (simulated analysis) shows a priority-queue of internal "Thoughts" that are processed between external tool-calls.
 - [**💎 Read the KAIROS Blueprint**](ARCHITECTURE/KAIROS_ALWAYS_ON.md)
 
 ### 🧬 PILLAR 02: THE UNIFIED HARNESS (AGENT HARNESS)
@@ -45,6 +46,7 @@ The **AGENT HARNESS** is an 8-crate high-fidelity orchestrator that bridges the 
 - **Ink Rendering:** Uses React-based terminal rendering for high-fidelity CLI visuals, providing the model with a structured, "Ink-Powered" viewport.
 - **Capability Discovery:** Dynamic schema-generation for installed CLI tools. The Harness "Scans" your system and reports available tools to the LLM.
 - **Context Pinning:** The Harness ensures that critical environment variables (PATH, PWD) are "Hard-Pinned" in the model's memory for zero-drift command execution.
+- **Security Logic:** The 2.1.84 Harness implements a "Trust-Score" for each command, required a human-in-the-loop if the score drops below 0.8.
 - [**⚔️ Read the AGENT HARNESS Blueprint**](ARCHITECTURE/AGENT_HARNESS.md)
 
 ### 💰 PILLAR 03: TOOL ECONOMICS & THE DIGEST
@@ -53,55 +55,47 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
 - **Schema Caching:** Dynamic TTL-based caching for frequent tool-definitions, preventing redundant token consumption during high-frequency tool usage.
 - **Context Pinning:** Hard-pinning of critical architectural "Gems" for drift-prevention in long-running development sessions.
 - **Token Economics:** A constitutional "Budgeter" that prevents the model from generating overly verbose responses during expensive tool-calls.
+- **Summary History:** The 2.1.84 Digest crate (simulated analysis) maintains a "Golden Thread" of architectural decisions.
 - [**💰 Read the TOOL ECONOMICS Blueprint**](ARCHITECTURE/TOOL_ECONOMICS.md)
 
 ### 🧭 PILLAR 04: THE MASTER PLANNER (ULTRAPLAN)
 The **ULTRAPLAN** system is the hierarchical reasoning engine that allows Claude to tackle "Impossible" projects. It decomposes complex, non-linear tasks into a directed graph of manageable component steps.
 - **Dynamic Re-Planning:** The agent continuously updates its "Project Map" as new information is discovered during execution.
-- **Checkpointing:** Automatic creation of "Safe-Points" that allow the agent to roll back architectural decisions if a path is identified as suboptimal.
+- **Checkpointing:** Automatic creation of "Safe-Points" that allow the agent to roll back architectural decisions.
 - **Task Hierarchy:** A Parent-Child relationship for tasks, ensuring that dependencies are resolved in the correct sequence.
+- **Recursive Decomposition:** If a step is too large, the agent automatically "Sub-Plans" using the same internal model.
 - [**🧭 Read the ULTRAPLAN Blueprint**](ARCHITECTURE/ULTRAPLAN.md)
 
 ### 📟 PILLAR 05: THE INTERACTIVE VIEWPORT (INK TERMINAL)
-The **INK** system provides the React-powered interface that turns a standard shell into a rich, interactive agentic environment.
+The **INK** system provides the React-powered interface that turns a standard shell into a rich, interactive agentic environment. 
 - **Live Output Streaming:** High-performance, low-latency streaming of terminal stdout/stderr to the React UI.
 - **Spinner & Progress Bars:** Constitutional UI components that give the user visual feedback during long-running agentic thoughts.
 - **Error Visualization:** Structured, color-coded error reports that help both the human and the agent diagnose command failures.
+- **Viewport Constraints:** The INK system ensures that large outputs are paginated/folded to prevent token-overflow.
 - [**📟 Read the INK TERMINAL UX Blueprint**](ARCHITECTURE/INK_TERMINAL_UX.md)
 
 ### 🤖 PILLAR 06: THE COLLEAGUE MENTAL MODEL (AGENT COLLEAGUE UI)
-The **COLLEAGUE UI** is the psychological framework that defines how Claude interacts with the human developer. It moves beyond "Chatbot" and into "Peer-Programmer."
-- **Constitutional Feedback:** The agent avoids "Yes-Man" behavior and provides critical, constructive feedback on architectural designs.
-- **Shared Workspace:** Both the human and the agent have simultaneous access to the terminal and codebase, creating a "Pair-Programming" loop.
+The **COLLEAGUE UI** is the psychological framework that defines how Claude interacts with the human developer. 
+- **Constitutional Feedback:** The agent avoids "Yes-Man" behavior and provides critical, constructive feedback on designs.
+- **Shared Workspace:** Both the human and the agent have simultaneous access to the terminal and codebase.
 - **Agentic Delegation:** Guidelines for how the human can delegate high-toil tasks to the agent while maintaining oversight.
+- **Personality Cadence:** Managing the "Pacing" of the agent's output to prevent user-overwhelm.
 - [**🤖 Read the AGENT COLLEAGUE UI Blueprint**](ARCHITECTURE/AGENT_COLLEAGUE_UI.md)
 
 ### 🚩 PILLAR 07: FEATURE TOGGLES (TENGU FLAGS)
 The **TENGU** system is the internal "Registry" of flags that control available capabilities and safety guardrails.
 - **Dynamic Capability Gating:** Toggling entire toolsets (e.g., "Browser", "WriteAccess") based on the security context.
-- **Safety Overrides:** Constitutional toggles that prevent the agent from performing high-risk actions without explicit user confirmation.
-- **A/B Testing:** Internal flags used by the developers to test new agentic reasoning paths in 2.1.84.
+- **Safety Overrides:** Constitutional toggles that prevent high-risk actions without explicit user confirmation.
+- **A/B Testing:** Internal flags used to test new agentic reasoning paths in 2.1.84.
+- **Feature Expiry:** Flags that automatically decay/disable after specific project milestones.
 - [**🚩 Read the TENGU FLAGS Blueprint**](ARCHITECTURE/TENGU_FLAGS.md)
 
-### 🐶 PILLAR 08: THE COMPANION SPIRITS (BUDDY SYSTEM)
-The **BUDDY SYSTEM** is a hidden, gacha-style companion logic designed to inject whimsy and personality into the professional developer cycle.
-- **Whimsical Spirits:** Collection of "Buddy" entities (like Cloppy or Bit) that appear based on repository milestones.
-- **Personality Crate:** Integration of the "Whimsy-Core" to drive non-functional, delight-focused interactions.
-- **Pet Logic:** Interaction cycles that allow the developer to "Interact" with their digital companions.
-- [**🐶 Read the BUDDY SYSTEM Blueprint**](ARCHITECTURE/BUDDY_SYSTEM.md)
-
-### ✨ PILLAR 09: THE PERSONALITY ENGINE (WHIMSY CORE)
-The **WHIMSY CORE** is the "Soul" of the agentic personality. It governs the conversational cadence, humor, and empathetic intelligence of the agent.
-- **Empathy Mapping:** Adjusting the agent's tone based on the developer's perceived frustration or progress.
-- **Humor Logic:** Context-aware injection of developer humor to reduce cognitive load during high-stress debugging.
-- **Cadence Control:** Managing the "Pacing" of the agent's output to prevent user-overwhelm.
-- [**✨ Read the WHIMSY CORE Blueprint**](ARCHITECTURE/WHIMSY_CORE.md)
-
-### 🛡️ PILLAR 10: THE SECURITY GATEWAY (PROTOCOL PROXY)
+### 🛡️ PILLAR 08: THE SECURITY GATEWAY (PROTOCOL PROXY)
 The **PROTOCOL PROXY** is the definitive security layer between the model's intent and the physical system execution.
 - **Command Sanitization:** Stripping malicious payloads or dangerous escape characters from generated shell commands.
 - **Validation Chains:** Multi-step verification of high-risk actions (rm, sudo, push).
-- **Audit Logging:** Every command intent and execution result is logged at the proxy level for forensic architectural analysis.
+- **Audit Logging:** Every command intent and result is logged at the proxy level for forensic analysis.
+- **Constitutional Guardrails:** Integration of the "Safety-Net" logic to prevent non-compliant system mutations.
 - [**🛡️ Read the PROTOCOL PROXY Blueprint**](ARCHITECTURE/PROTOCOL_PROXY.md)
 
 ---
@@ -121,25 +115,15 @@ The following prompts have been synthesized from the 2.1.84 registry and represe
 | **Claude Sonnet 4.6**| [**⚔️ System Prompt**](PROMPTS/Anthropic/claude-sonnet-4.6.md) | The definitive "Performance" model prompt for rapid coding. |
 | **Claude for Excel** | [**📊 System Prompt**](PROMPTS/Anthropic/claude-for-excel.md) | Niche, high-fidelity spreadsheet formula and VBA logic. |
 | **Claude in Chrome** | [**🌐 System Prompt**](PROMPTS/Anthropic/claude-in-chrome.md) | Verified browser-context interaction and DOM manipulation. |
+| **Tengu Flags** | [**🚩 Safety Logic**](ARCHITECTURE/TENGU_FLAGS.md) | Analysis of internal feature flagging and safety toggles. |
+| **Buddy System** | [**🐶 Companion Logic**](ARCHITECTURE/BUDDY_SYSTEM.md) | Hidden, whimsical gacha-style companion logic. |
 
 ---
 
-## 🤖 THE AGENT ARMY (THE RESIDENT ORCHESTRATORS)
-The **CLAUDE SOURCE HUB** is not just a static archive—it is a living ecosystem managed by **Kazi's Agent Army**. Each agent below is a specialized LLM persona designed to govern a different pillar of the Hub's development.
+## 📂 THE ARCHITECTURAL REPOSITORY (DEEP-DOCS)
 
-1. **ZEUS — Master Orchestrator & Strategy Commander:** The leader of the fleet. Manages the 6-phase project lifecycle (Discovery → Strategy → Build → Harden → Launch → Scale → Evolve). ZEUS ensures that the Hub remains the global authority on Claude Code 2.1.84 architecture.
-2. **ATLAS — Engineering God:** The implementation lead. Specialized in architectural synthesis, repository structural integrity, and the "Zero-Trace Architecture" that keeps our internal research private while showcasing the public archive.
-3. **SENTINEL — Security Guardian:** The protector of the Hub. Enforces the "Metadata-Only" policy and the absolute privacy of internal research (.GHOST_RESEARCH). SENTINEL audits every commit for proprietary code leaks.
-4. **PIXEL — Design & UX Mastery:** The branding expert. Ensures the Hub remains a world-class, "WOW" showcase for public researchers. PIXEL is responsible for this high-impact, 1000-line master Readme.
-5. **TITAN — QA Lead:** The skeptical reviewer. Ensures every commit meets the Hub's high-fidelity quality standards. TITAN performs recursive link checks and structural verification before any "Grand Synthesis" push.
-
-[**🤖 EXPLORE THE FULL AGENT ARMY OPS MANUAL**](AGENTS/KAZI_AGENT_ARMY.md)
-
----
-
-## 📂 THE MASTER ARCHIVE DIRECTORY
-
-### 🏛️ ARCHITECTURE (Deep-Dive Blueprints)
+### 🏛️ ARCHITECTURE (Teardowns & Blueprints)
+Every file below is a high-fidelity metadata teardown of the 2.1.84 blueprints. No architecture remains undocumented.
 - [**🛠️ CORE RUNTIME**](ARCHITECTURE/CORE_RUNTIME.md) - The primary entrypoint and initialization logic for the 2.1.84 ecosystem.
 - [**🧬 AGENT HARNESS**](ARCHITECTURE/AGENT_HARNESS.md) - Analysis of the 8-crate Rust/TypeScript orchestrator and command bridge.
 - [**💰 TOOL ECONOMICS**](ARCHITECTURE/TOOL_ECONOMICS.md) - Schema-driven discovery, context pinning, and session persistence.
@@ -151,6 +135,21 @@ The **CLAUDE SOURCE HUB** is not just a static archive—it is a living ecosyste
 - [**🚩 TENGU FLAGS**](ARCHITECTURE/TENGU_FLAGS.md) - Internal feature flagging, capability gating, and safety toggle registry.
 - [**✨ WHIMSY CORE**](ARCHITECTURE/WHIMSY_CORE.md) - Detailed analysis of the "Fun" and "Personality" crates within the agent.
 - [**🌍 EVOLUTION**](ARCHITECTURE/COMMUNITY_EVOLUTION.md) - Documenting how the global developer community is evolving the 2.1.84 metadata.
+- [**🧱 LEAK SUMMARY**](ARCHITECTURE/LEAK_SUMMARY.md) - The definitive timeline of the 2.1.84 incident and its impact.
+
+---
+
+## 🤖 THE AGENT ARMY (THE RESIDENT ORCHESTRATORS)
+The **CLAUDE SOURCE HUB** is not just a static archive—it is a living ecosystem managed by **Kazi's Agent Army**. Each agent below is a specialized LLM persona designed to govern a different pillar of the Hub's development.
+
+1. **ZEUS — Master Orchestrator & Strategy Commander:** The leader of the fleet. Manages the 6-phase project lifecycle (Discovery → Strategy → Build → Harden → Launch → Scale → Evolve). ZEUS ensures that the Hub remains the global authority on Claude Code 2.1.84 architecture.
+2. **ATLAS — Engineering God:** The implementation lead. Specialized in architectural synthesis, repository structural integrity, and the "Zero-Trace Architecture" that keeps our internal research private while showcasing the public archive.
+3. **SENTINEL — Security Guardian:** The protector of the Hub. Enforces the "Metadata-Only" policy and the absolute privacy of internal research (.GHOST_RESEARCH). SENTINEL audits every commit for proprietary code leaks.
+4. **PIXEL — Design & UX Mastery:** The branding expert. Ensures the Hub remains a world-class, "WOW" showcase for public researchers. PIXEL is responsible for this high-impact, 1000-line master Readme.
+5. **TITAN — QA Lead:** The skeptical reviewer. Ensures every commit meets the Hub's high-fidelity quality standards. TITAN performs recursive link checks and structural verification before any "Grand Synthesis" push.
+6. **HERMES — Automation Specialist:** Manages the CI/CD pipelines and the automatic metadata-extraction engines in the hidden research layer.
+
+[**🤖 EXPLORE THE FULL AGENT ARMY OPS MANUAL**](AGENTS/KAZI_AGENT_ARMY.md)
 
 ---
 
