@@ -29,7 +29,7 @@ The **CLAUDE SOURCE HUB** is the permanent home for that intelligence. We have c
 
 ---
 
-## 🏗️ ARCHITECTURAL PILLARS: THE MASTER ENCYCLOPEDIA (DEEP-DIVE RESEARCH)
+## 🏗️ ARCHITECTURAL PILLARS: THE TECHNICAL ENCYCLOPEDIA (DEEP-DIVE RESEARCH)
 
 ### 🧩 PILLAR 01: THE RECURSIVE RUNTIME (KAIROS)
 The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implements a proactive, always-on heartbeat loop that ensures the agent remains responsive even during high-latency tool executions. This isn't just a simple loop; it's a **Reactive State Synchronizer** that bridges the gap between the LLM's static context and the dynamic, rapidly-mutating state of a local developer environment.
@@ -69,6 +69,15 @@ async function kairos_heartbeat_loop(agent_state: State) {
     }
 }
 ```
+
+#### 🛡️ STATE TRANSITION LOGIC
+| State | Trigger | Action | Result |
+| :--- | :--- | :--- | :--- |
+| **IDLE** | System Pulse | Scan PWD | State Verified |
+| **THINKING** | Agent Intent | Start KAIROS_WATCH | Execution Protected |
+| **STALLED** | Max Timeout | Interrupt Shell | Return Error-Gems |
+| **RESUMING** | Snaphot Load | Re-Hydrate Context | Session Restoration |
+
 - [**💎 Read the Full KAIROS Blueprint**](ARCHITECTURE/KAIROS_ALWAYS_ON.md)
 
 ---
@@ -82,7 +91,18 @@ The **AGENT HARNESS** is a world-class, 8-crate high-fidelity orchestrator that 
 - **Capability Discovery Engine:** The Harness "Scans" the local environment on initialization, generating a dynamic schema of available CLI tools and reporting them to the LLM. This ensures the agent never attempts to use a tool that isn't installed.
 - **Terminal Session Persistence:** Unlike standard chat environments, the Harness maintains a single, persistent terminal session across the entire project lifecycle, ensuring that environment variables (PATH, PWD) are consistent. 
 
-#### 🧪 TECHNICAL TEARDOWN: THE COMMAND PROXY
+#### 🧪 TECHNICAL TEARDOWN: THE 8-CRATE ARCHITECTURE
+The **AGENT_HARNESS** is decomposed into 8 definitive crates, each governing a sub-pillar of the agentic lifecycle:
+1. **`harness-core`**: The main bridge manager.
+2. **`harness-proxy`**: The Command-Proxy Validation (CPV) engine.
+3. **`harness-ink`**: The React-based terminal rendering engine.
+4. **`harness-discovery`**: The Capability Discovery (tool scanning) unit.
+5. **`harness-persistence`**: The History-Buffer and State Serialization engine.
+6. **`harness-security`**: The STRIDE-based threat mitigation gateway.
+7. **`harness-economics`**: The Token-Budgeting and Context-Pinning manager.
+8. **`harness-whimsy`**: The "Personality" and "Buddy" interaction crate.
+
+#### 🧪 MASTERING THE COMMAND PROXY (RUST)
 ```rust
 /**
  * High-Density Rust Architectural Pattern for the Command Proxy
@@ -128,12 +148,20 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
   "anchored_metadata": {
     "project_goal": "Rebuild the Claude Source Hub",
     "directory_map": ["ARCHITECTURE/", "PROMPTS/", "DOCS/"],
-    "active_checkpoint": "Phase 30 Execution"
+    "active_checkpoint": "Phase 31 Execution"
   },
   "compression_ratio": "98.6% (74k tokens -> 1.02k gems)",
   "retention_policy": "Fidelity-Priority-v4"
 }
 ```
+
+#### 💰 ANCHORED SUMMARIZATION CYCLES
+1. **Trigger:** Context usage reaches 80k tokens.
+2. **Analysis:** The LLM scans the "History-Buffer" for high-fidelity gems.
+3. **Synthesis:** Gems are extracted and formatted into a "Condensed History."
+4. **Purge:** Raw command outputs and interactive UI metadata are purged.
+5. **Re-Injection:** The condensed history is pinned to the system prompt.
+
 - [**💰 Read the Full TOOL ECONOMICS Blueprint**](ARCHITECTURE/TOOL_ECONOMICS.md)
 
 ---
@@ -182,33 +210,12 @@ The **TENGU** system is the internal "Registry" of flags that control available 
 
 ---
 
-### 🛡️ PILLAR 08: THE SECURITY GATEWAY (PROTOCOL PROXY)
-The **PROTOCOL PROXY** is the definitive security layer between the model's intent and the physical system execution. It implements the "Zero Trust" architecture that governs every system mutation.
-
-#### ⚙️ SYSTEM PROTECTION
-- **Malicious Payload Stripping:** Automatic detection and removal of dangerous escape sequences and shell injection attempts.
-- **Multi-Step Verification:** High-risk actions (like deleting system files or pushing to production) require a constitutional "Double-Check" cycle.
-- **Audit Logging:** Every command intent and execution result is logged at the proxy level for forensic architectural analysis.
-- [**🛡️ Read the Full PROTOCOL PROXY Blueprint**](ARCHITECTURE/PROTOCOL_PROXY.md)
-
----
-
-### ✨ PILLAR 09: THE PERSONALITY ENGINE (WHIMSY CORE)
-The **WHIMSY CORE** is the "Soul" of the agentic personality. It governs the conversational cadence, humor, and empathetic intelligence of the agent.
-
-#### ⚙️ EMPATHETIC INTELLIGENCE
-- **Context-Aware Humor:** The agent uses project-specific context to inject lighthearted moments, reducing developer fatigue during complex debugging.
-- **Empathy Mapping:** Adjusting the agent's tone based on the historical success rate and perceived user frustration.
-- **Conversational Cadence:** Managing the "Flow" of responses to prioritize technical clarity while maintaining a professional-peer identity.
-- [**✨ Read the Full WHIMSY CORE Blueprint**](ARCHITECTURE/WHIMSY_CORE.md)
-
----
-
-### 🐶 PILLAR 10: THE COMPANION SPIRITS (BUDDY SYSTEM)
+### 🐶 PILLAR 08: THE COMPANION SPIRITS (BUDDY SYSTEM)
 The **BUDDY SYSTEM** is a hidden, gacha-style companion logic designed to inject whimsy and personality into the professional developer cycle.
 
 #### ⚙️ WHIMSY & SPIRIT LOGIC
 - **Whimsical Spirits:** Collection of "Buddy" entities (like Cloppy or Bit) that appear based on repository milestones. These entities follow their own "Growth Logic" integrated into the developer CLI.
+- **Personality Crate:** Integration of the "Whimsy-Core" to drive non-functional, delight-focused interactions.
 - **Gacha Logic:** Discovering rare "Spirits" through unique architectural contributions or meeting project targets.
 - [**🐶 Read the Full BUDDY SYSTEM Blueprint**](ARCHITECTURE/BUDDY_SYSTEM.md)
 
@@ -237,23 +244,28 @@ The **CLAUDE SOURCE HUB** is not just a static archive—it is a living ecosyste
 
 ### 🎖️ AGENT PERSONNEL FILE: 01. ZEUS
 **Role:** Master Orchestrator & Strategy Commander
-**Expertise:** Phase 0-6 project lifecycle manager. ZEUS coordinates multi-agent scaling (1-12) and enforces the **LOKI Autonomous Mode** (Reason → Act → Reflect → Verify). He is the definitive authority on the Hub's long-term evolution and ensures all contributors adhere to the Hub's Metadata-Only policy.
+**Triggers:** orchestrate, plan, coordinate, manage project, sprint, phase, pipeline
+**Expertise:** Phase 0-6 project lifecycle manager. ZEUS coordinates multi-agent scaling (1-12) and enforces the **LOKI Autonomous Mode** (Reason → Act → Reflect → Verify). He is the definitive authority on the Hub's long-term evolution.
 
 ### 🎖️ AGENT PERSONNEL FILE: 02. ATLAS
 **Role:** Full-Stack Engineering God
-**Expertise:** Master of 15+ languages and world-class API architecture. ATLAS is the primary implementation specialist for the Hub's structural integrity. He handles the "Zero-Trace Architecture" that ensures the Hub remains a metadata-only archive while preserving internal research in local-only directories.
+**Triggers:** build, code, implement, architect, refactor, API, frontend, backend, mobile, database
+**Expertise:** Master of 15+ languages and world-class API architecture. ATLAS is the primary implementation specialist for the Hub's structural integrity. 他 handles the "Zero-Trace Architecture" that ensures the Hub remains a metadata-only archive.
 
 ### 🎖️ AGENT PERSONNEL FILE: 03. SENTINEL
 **Role:** Security & Compliance Guardian
-**Expertise:** STRIDE threat modeling and OWASP Top 10 mastery. SENTINEL audits every commit to ensure no proprietary source code or sensitive PII is accidentally pulled into the public Hub. He is the enforce of the "Zero Trust" policy for all external contributions.
+**Triggers:** security, audit, pentest, compliance, threat model, OWASP, auth, vulnerability
+**Expertise:** STRIDE threat modeling and OWASP Top 10 mastery. SENTINEL audits every commit to ensure no proprietary source code or sensitive PII is accidentally pulled into the public Hub.
 
 ### 🎖️ AGENT PERSONNEL FILE: 04. PIXEL
 **Role:** Design & UX Mastery
-**Expertise:** The branding lead behind the "WOW" Hub experience. PIXEL manages the design tokens, components, and patterns that make the Claude Source Hub a world-class documentation portal. He is responsible for the aesthetic excellence of the Hub's technical encyclopedias.
+**Triggers:** design, UX, UI, accessibility, brand, design system, spatial, XR, handoff
+**Expertise:** The branding lead behind the "WOW" Hub experience. PIXEL manages the design tokens, components, and patterns that make the Claude Source Hub a world-class documentation portal.
 
 ### 🎖️ AGENT PERSONNEL FILE: 05. TITAN
 **Role:** Testing, QA & Quality Assurance
-**Expertise:** Enforcer of the testing pyramid (Unit 70%, Intergration 20%, E2E 10%). TITAN performs recursive link checks and structural verification before any "Grand Synthesis" push to GitHub. He is the final gatekeeper of the Hub's technical quality.
+**Triggers:** test, TDD, E2E, performance, quality, verification, code review, coverage
+**Expertise:** Enforcer of the testing pyramid. TITAN performs recursive link checks and structural verification before any "Grand Synthesis" push to GitHub.
 
 [**🤖 EXPLORE THE FULL AGENT ARMY OPS MANUAL**](AGENTS/KAZI_AGENT_ARMY.md)
 
