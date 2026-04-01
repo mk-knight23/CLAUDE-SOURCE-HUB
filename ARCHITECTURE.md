@@ -1,42 +1,24 @@
-# 🧱 ARCHITECTURE: Repository Map
+# 🧱 ARCHITECTURE MAP: The 2.1.84 Blueprints
 
-Welcome to the internal blueprint of the **CLAUDE SOURCE HUB**. This guide helps you navigate our curated metadata and research synthesis.
-
-## 🧭 Directory Structure
-
-### 🛡️ [ARCHITECTURE/](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/)
-The heart of the Hub. High-fidelity architectural deep-dives synthesized from the blueprints.
-
-### 📜 [PROMPTS/](file:///Users/mkazi/Claude-Source-Hub/PROMPTS/)
-A curated library of agentic identity blueprints (Anthropic only).
-
-### 🚀 [GROWTH/](file:///Users/mkazi/Claude-Source-Hub/GROWTH/)
-The Go-To-Market suite for sharing and scaling the Hub's impact on LinkedIn and X.com.
-
-### 📂 [DATA/](file:///Users/mkazi/Claude-Source-Hub/DATA/) & [DOCUMENTATION/](file:///Users/mkazi/Claude-Source-Hub/DOCUMENTATION/)
-External metadata and archived documentation guides.
-
-### 🤫 [.ghost_research/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/)
-The hidden research workspace for **Kazi's Agent Army**. It serves as the internal "Scanning Engine" for new repository clones.
+The **Claude Code 2.1.84 ecosystem** is a masterclass in recursive agentic software engineering. This map synthesizes the internal directory and service architecture of the definitive research archive.
 
 ---
 
-## 🧬 Research Foundation
-We synthesize intelligence from the following 7 foundational repositories:
-- **[asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)**
-- **[NanmiCoder/claude-code-haha](https://github.com/NanmiCoder/claude-code-haha)**
-- **[leaked-claude-code/leaked-claude-code](https://github.com/leaked-claude-code/leaked-claude-code)**
-- **[GitHpriyanshu23/Claude-code-leaks](https://github.com/GitHpriyanshu23/Claude-code-leaks)**
-- **[soufianebouaddis/claude-code](https://github.com/soufianebouaddis/claude-code)**
-- **[instructkr/claw-code](https://github.com/instructkr/claw-code)**
-- **[claw-cli/claw-code-rust](https://github.com/claw-cli/claw-code-rust)**
+## 🏛️ CORE RESEARCH SERVICES
+The following architectural pillars represent the high-fidelity synthesis of the agentic runtime:
+- [**🛠️ CORE RUNTIME**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/CORE_RUNTIME.md): The primary entrypoint and initialization logic.
+- [**🧬 AGENT HARNESS**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_HARNESS.md): The 8-crate orchestrator for local shell tool-execution.
+- [**Recursive Runtime**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/KAIROS_ALWAYS_ON.md): The proactive, always-on heartbeat loop.
+- [**💰 TOOL ECONOMICS**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md): Schema-driven tool discovery and session persistence.
+- [**📟 INK TERMINAL UX**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/INK_TERMINAL_UX.md): React-powered local shell rendering.
 
 ---
 
-## 🧬 Architectural Principles
-1.  **Strict Non-Runnable Policy:** No `.js`, `.py`, or `.ts` files in the public Hub.
-2.  **Metadata-Only Synthesis:** Golden Gems extracted as `.md` or `.json`.
-3.  **Agentic Governance:** The entire repository is curated and updated by an agentic pipeline.
+## 🧬 INTER-HUB NAVIGATION
+- [**🏠 BACK TO README**](file:///Users/mkazi/Claude-Source-Hub/README.md)
+- [**📖 THE STORY**](file:///Users/mkazi/Claude-Source-Hub/STORY.md)
+- [**🤝 CONTRIBUTING**](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md)
+- [**📟 DOCS GUIDE**](file:///Users/mkazi/Claude-Source-Hub/DOCS/GUIDE.md)
 
 ---
-*Maintained by Kazi's Agent Army.*
+*Curated by Kazi's Agent Army and the Global Developer Community.*

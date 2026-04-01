@@ -12,18 +12,15 @@ The definitive, world-class architectural archive of the **Claude Code 2.1.84 ec
 In early 2026, the **Claude Code 2.1.84 Registry Incident** redefined the boundaries of agentic software engineering. What followed was a 48-hour mobilization where the global developer community synthesized the architectural intelligence behind the leak.
 
 The **CLAUDE SOURCE HUB** is the permanent home for that intelligence.
+- [**📖 READ THE FULL STORY**](file:///Users/mkazi/Claude-Source-Hub/STORY.md)
 
 ---
 
-## 🧭 NAVIGATION
-- **[🧱 ARCHITECTURE Map](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md):** The Hub's internal directory blueprint.
-- **[🤝 CONTRIBUTING](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md):** Guidelines for metadata-only research.
-- **[🤫 .GHOST_RESEARCH/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
-
----
-
-## 📈 STAR HISTORY
-[![Star History Chart](https://api.star-history.com/svg?repos=mk-knight23/CLAUDE-SOURCE-HUB&type=Date)](https://star-history.com/#mk-knight23/CLAUDE-SOURCE-HUB&Date)
+## 🧭 INTER-HUB NAVIGATION
+- [**🧱 ARCHITECTURE MAP**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md): The definitive directory of the 2.1.84 blueprints.
+- [**🤝 CONTRIBUTING**](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md): Guidelines for metadata-only research and attribution.
+- [**📖 THE STORY**](file:///Users/mkazi/Claude-Source-Hub/STORY.md): The background and synthesis of the leak.
+- [**📟 DOCS GUIDE**](file:///Users/mkazi/Claude-Source-Hub/DOCS/GUIDE.md): Technical guides for researching the architectural metadata.
 
 ---
 
@@ -33,7 +30,7 @@ The **CLAUDE SOURCE HUB** is the permanent home for that intelligence.
 | :--- | :--- | :--- |
 | **Recursive Runtime** | The proactive, always-on heartbeat loop. | [KAIROS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/KAIROS_ALWAYS_ON.md) |
 | **Unified Harness** | The 8-crate high-fidelity agentic orchestrator. | [AGENT_HARNESS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_HARNESS.md) |
-| **Tool Economics** | Schema-driven discovery and digest strategies. | [TOOL_ECONOMICS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md) |
+| **Tool Economics** | Schema-driven tool discovery and session persistence. | [TOOL_ECONOMICS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md) |
 | **Ink Terminal UX** | React-powered local shell rendering. | [INK_TERMINAL_UX](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/INK_TERMINAL_UX.md) |
 | **Buddy System** | The secret gacha-style companion logic. | [BUDDY_SYSTEM](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/BUDDY_SYSTEM.md) |
 
@@ -58,8 +55,13 @@ The synthesized library of identity and safety guardrails.
 ### 🏛️ REPOSITORY GOVERNANCE
 Professional, Metadata-Only Research Archive.
 - [**🧱 ARCHITECTURE Map**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md): The Hub's internal directory blueprint.
-- [**🤝 CONTRIBUTING**](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md): Guidelines for metadata-only research.
+- [**🤝 CONTRIBUTING**](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md): Guidelines for metadata-only research and attribution.
 - **[🤫 .GHOST_RESEARCH/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
+
+---
+
+## 📈 STAR HISTORY
+[![Star History Chart](https://api.star-history.com/svg?repos=mk-knight23/CLAUDE-SOURCE-HUB&type=Date)](https://star-history.com/#mk-knight23/CLAUDE-SOURCE-HUB&Date)
 
 ---
 
