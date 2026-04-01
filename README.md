@@ -56,7 +56,7 @@ The **CLAUDE SOURCE HUB** is a living ecosystem managed by the **LOKI Autonomous
 
 ---
 
-## 🏗️ ARCHITECTURAL PILLARS: THE TECHNICAL ENCYCLOPEDIA (DEEP-DIVE RESEARCH)
+## 🏗️ ARCHITECTURAL PILLARS: THE MASTER TECHNICAL ENCYCLOPEDIA
 
 ### 🧩 PILLAR 01: THE RECURSIVE RUNTIME (KAIROS)
 The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implements a proactive, always-on heartbeat loop that ensures the agent remains responsive even during high-latency tool executions. This isn't just a simple loop; it's a **Reactive State Synchronizer**.
@@ -64,9 +64,10 @@ The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implem
 #### ⚙️ MASTERING THE PULSE
 - **Proactive Heartbeat (KAIROS_TICK):** A 500ms internal pulse that triggers "Self-Scan" cycles. This ensures that if the environment changes (e.g., a file is deleted by an external process), the agent's internal state is updated without waiting for a user prompt.
 - **Constitutional Timeouts:** KAIROS governs the "Pacing" of the agent's thoughts. If a tool-call exceeds the constitutional timeout, KAIROS initiates a "Forced Interruption."
+- **Recursive Reasoning Loops:** The system can trigger internal "Think-Steps" that are not visible to the user but are processed by the LLM as part of its planning cycle. This allows for autonomous troubleshooting of complex build-pipe errors.
 - **Graceful State Serialization:** Every conversation turn and tool result is serialized into a high-fidelity "History-Buffer." This ensures that if the CLI crashes, the agent can resume from the exact sub-step within its plan.
 
-#### 🧪 TECHNICAL TEARDOWN: THE KAIROS_LOOP (DEEP-DIVE)
+#### 🧪 TECHNICAL TEARDOWN: THE KAIROS_LOOP (DEEP-DIVE PSEUDOCODE)
 ```typescript
 /**
  * Architectural Pseudocode of the KAIROS Heartbeat
@@ -84,7 +85,7 @@ async function kairos_heartbeat_loop(agent_state: State) {
             await agent_state.reconcile(fs_snapshot);
         }
         
-        // 2. Constitutional Guardrail Check
+        // 2. Constitutional Guardrail Check (Timeout Protection)
         if (agent_state.current_tool_execution_time() > MAX_TIMEOUT) {
             await agent_state.emit_constitutional_timeout();
             return;
@@ -114,7 +115,7 @@ The **AGENT HARNESS** is a world-class, 8-crate high-fidelity orchestrator that 
 #### ⚙️ BRIDGING THE SHELL
 - **Command-Proxy Validation (CPV):** Every model-generated shell command is intercepted and validated against a whitelist of 250+ "Safe" and "Verified" developer tools. Malicious payloads or dangerous escape characters are stripped before they reach the shell.
 - **Ink-Powered Interactive Rendering:** Uses the React-based **Ink** library to provide high-fidelity visuals (progress bars, spinners, colored tables) to the user. This "Interactive Viewport" is what makes Claude Code feel alive and responsive.
-- **Capability Discovery Engine:** The Harness "Scans" the local environment on initialization, generating a dynamic schema of available CLI tools.
+- **Capability Discovery Engine:** The Harness "Scans" the local environment on initialization, generating a dynamic schema of available CLI tools and reporting them to the LLM. 
 
 #### 🧪 TECHNICAL TEARDOWN: THE 8-CRATE ARCHITECTURE
 The **AGENT_HARNESS** is decomposed into 8 definitive crates, each governing a sub-pillar of the agentic lifecycle:
@@ -127,7 +128,7 @@ The **AGENT_HARNESS** is decomposed into 8 definitive crates, each governing a s
 7. **`harness-economics`**: The Token-Budgeting and Context-Pinning manager.
 8. **`harness-whimsy`**: The "Personality" and "Buddy" interaction crate.
 
-#### 🧪 MASTERING THE COMMAND PROXY (RUST)
+#### 🧪 MASTERING THE COMMAND PROXY (RUST DEEP-DIVE)
 ```rust
 /**
  * High-Density Rust Architectural Pattern for the Command Proxy
@@ -172,7 +173,7 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
   "anchored_metadata": {
     "project_goal": "Rebuild the Claude Source Hub",
     "directory_map": ["ARCHITECTURE/", "PROMPTS/", "DOCS/"],
-    "active_checkpoint": "Phase 33 Execution"
+    "active_checkpoint": "Phase 34 Execution"
   },
   "compression_ratio": "98.6% (74k tokens -> 1.02k gems)",
   "retention_policy": "Fidelity-Priority-v4"
@@ -208,25 +209,25 @@ The **INK** system provide the React-powered interface that turns a standard she
 The **COLLEAGUE UI** is the psychological framework that defines how Claude interacts with the human developer. It moves beyond "Chatbot" and into "Senior Peer-Programmer."
 
 #### ⚙️ PAIR-PROGRAMMING PSYCHOLOGY
-- **Non-Deferential Reasoning:** The agent avoids "Yes-Man" behavior. If a user's instruction is architecturally suboptimal, the agent provide a constitutional critique.
+- **Non-Deferential Reasoning:** The agent avoids "Yes-Man" behavior. If a user's instruction is architecturally suboptimal, the agent provides a constitutional critique.
 - **Shared Workspace Persistence:** Both the human and the agent have simultaneous access to the terminal and codebase.
 - **Empathetic Pacing:** The agent manages its output speed and tone based on the task complexity.
 - [**🤖 Read the Full AGENT COLLEAGUE UI Blueprint**](ARCHITECTURE/AGENT_COLLEAGUE_UI.md)
 
 ---
 
-### 🛡️ PILLAR 07: THE SECURITY GATEWAY (PROTOCOL PROXY)
+## 🛡️ PILLAR 07: THE SECURITY GATEWAY (PROTOCOL PROXY)
 The **PROTOCOL PROXY** is the definitive security layer between the model's intent and the physical system execution. It implements the "Zero Trust" architecture that governs every system mutation.
 
 #### ⚙️ SYSTEM PROTECTION
 - **Malicious Payload Stripping:** Automatic detection and removal of dangerous escape sequences and shell injection attempts.
-- **Multi-Step Verification:** High-risk actions require a constitutional "Double-Check" cycle.
+- **Multi-Step Verification:** High-risk actions (like deleting system files or pushing to production) require a constitutional "Double-Check" cycle.
 - **Audit Logging:** Every command intent and execution result is logged at the proxy level.
 - [**🛡️ Read the Full PROTOCOL PROXY Blueprint**](ARCHITECTURE/PROTOCOL_PROXY.md)
 
 ---
 
-### ✨ PILLAR 08: THE PERSONALITY ENGINE (WHIMSY CORE)
+## ✨ PILLAR 08: THE PERSONALITY ENGINE (WHIMSY CORE)
 The **WHIMSY CORE** is the "Soul" of the agentic personality. It governs the conversational cadence, humor, and empathetic intelligence of the agent.
 
 #### ⚙️ EMPATHETIC INTELLIGENCE
@@ -236,7 +237,7 @@ The **WHIMSY CORE** is the "Soul" of the agentic personality. It governs the con
 
 ---
 
-### 🐶 PILLAR 09: THE COMPANION SPIRITS (BUDDY SYSTEM)
+## 🐶 PILLAR 09: THE COMPANION SPIRITS (BUDDY SYSTEM)
 The **BUDDY SYSTEM** is a hidden, gacha-style companion logic designed to inject whimsy and personality into the professional developer cycle.
 
 #### ⚙️ WHIMSY & SPIRIT LOGIC
@@ -309,7 +310,7 @@ The **CLAUDE SOURCE HUB** is a living ecosystem managed by **Kazi's Agent Army**
 - [**🛡️ PROTOCOL PROXY**](ARCHITECTURE/PROTOCOL_PROXY.md) - Secure command validation and sanitization logic.
 - [**🚩 TENGU FLAGS**](ARCHITECTURE/TENGU_FLAGS.md) - Internal feature flagging and capability gating.
 - [**✨ WHIMSY CORE**](ARCHITECTURE/WHIMSY_CORE.md) - Analysis of the "Fun" and "Personality" crates.
-- [**🌍 EVOLUTION**](ARCHITECTURE/COMMUNITY_EVOLUTION.md) - Global developer community community-driven evolution research.
+- [**🌍 EVOLUTION**](ARCHITECTURE/COMMUNITY_EVOLUTION.md) - Global developer community-driven evolution research.
 
 ---
 
