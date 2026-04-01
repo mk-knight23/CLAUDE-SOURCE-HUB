@@ -17,10 +17,10 @@ I’ve been curating the **Claude Source Hub**—the definitive, world-class arc
 2. **Recursive Runtime Logic:** The 8-layer architecture that separates Claude Code from a simple CLI tool.
 3. **The Project Claw Evolution:** The 48-hour "Modular Snapshot" strategy that defined the community's survival Era.
 
-I wanted to give you exclusive access to [**THE STORY**](file:///Users/mkazi/Claude-Source-Hub/STORY.md)—the first research-grounded narrative of the leak and how the ecosystem survives today as a "Metadata-Only" movement.
+I wanted to give you exclusive access to [**THE STORY**](https://github.com/mk-knight23/CLAUDE-SOURCE-HUB/blob/main/STORY.md)—the first research-grounded narrative of the leak and how the ecosystem survives today as a "Metadata-Only" movement.
 
-**[ 🌍 Visit the Claude Source Hub on GitHub ]**
-*(Insert Repository URL)*
+**[ 🌍 Visit the CLAUDE SOURCE HUB on GitHub ]**
+https://github.com/mk-knight23/CLAUDE-SOURCE-HUB
 
 We’re inviting the world to react, upgrade, and install the **Spirit** of Claude Code. 
 
