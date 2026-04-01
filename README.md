@@ -62,7 +62,7 @@ The **CLAUDE SOURCE HUB** is a living ecosystem managed by the **LOKI Autonomous
 The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implements a proactive, always-on heartbeat loop that ensures the agent remains responsive even during high-latency tool executions. This isn't just a simple loop; it's a **Reactive State Synchronizer**.
 
 #### ⚙️ MASTERING THE PULSE
-- **Proactive Heartbeat (KAIROS_TICK):** A 500ms internal pulse that triggers "Self-Scan" cycles. This ensures that if the environment changes (e.g., a file is deleted by an external process), the agent's internal state is updated without waiting for a user prompt.
+- **Proactive Heartbeat (KAIROS_TICK):** A 500ms internal pulse that triggers "Self-Scan" cycles. This ensures that if the environment changes, the agent's internal state is updated without waiting for a user prompt.
 - **Constitutional Timeouts:** KAIROS governs the "Pacing" of the agent's thoughts. If a tool-call exceeds the constitutional timeout, KAIROS initiates a "Forced Interruption" and returns a structured error-gem.
 - **Recursive Reasoning Loops:** The system can trigger internal "Think-Steps" that are not visible to the user but are processed by the LLM as part of its planning cycle.
 - **Graceful State Serialization:** Every conversation turn and tool result is serialized into a high-fidelity "History-Buffer."
@@ -77,7 +77,7 @@ The **KAIROS** system is the "Heartbeat" of the Claude Code ecosystem. It implem
  */
 async function kairos_heartbeat_loop(agent_state: State) {
     while (agent_state.is_active) {
-        const pulse = await wait_ms(500); // The 500ms Tick Pulse Pulse
+        const pulse = await wait_ms(500); // The 500ms Tick Pulse Pulse Pulse
         
         // 1. Proactive Environment Reality-Reconciliation
         if (agent_state.needs_reconciliation()) {
@@ -116,19 +116,18 @@ The **AGENT HARNESS** is a world-class, 8-crate high-fidelity orchestrator that 
 #### ⚙️ BRIDGING THE SHELL
 - **Command-Proxy Validation (CPV):** Every model-generated shell command is intercepted and validated against a whitelist of 250+ "Safe" and "Verified" developer tools. Malicious payloads or dangerous escape characters are stripped before they reach the shell.
 - **Ink-Powered Interactive Rendering:** Uses the React-based **Ink** library to provide high-fidelity visuals (progress bars, spinners, colored tables) to the user. This "Interactive Viewport" is what makes Claude Code feel alive and responsive.
-- **Capability Discovery Engine:** The Harness "Scans" the local environment on initialization, generating a dynamic schema of available CLI tools and reporting them to the LLM. 
-- **Terminal Session Persistence:** Maintain a single, persistent terminal session across the entire project lifecycle, ensuring environment consistency.
+- **Capability Discovery Engine:** The Harness "Scans" the local environment on initialization, generating a dynamic schema of available CLI tools. 
 
 #### 🧪 TECHNICAL TEARDOWN: THE 8-CRATE ARCHITECTURE
 The **AGENT_HARNESS** is decomposed into 8 definitive crates, each governing a sub-pillar of the agentic lifecycle:
-1. **`harness-core`**: The main bridge manager and entrypoint for the agentic context.
+1. **`harness-core`**: The main bridge manager and entrypoint.
 2. **`harness-proxy`**: The Command-Proxy Validation (CPV) engine with STRIDE-based sanitation.
-3. **`harness-ink`**: The React-based terminal rendering engine for interactive visuals.
-4. **`harness-discovery`**: The Capability Discovery (tool scanning) unit for dynamic tool-schema generation.
-5. **`harness-persistence`**: The History-Buffer and State Serialization engine for long-duration session recovery.
-6. **`harness-security`**: The STRIDE-based threat mitigation gateway and "Zero Trust" command audit.
-7. **`harness-economics`**: The Token-Budgeting, Context-Pinning, and Digestive summarization manager.
-8. **`harness-whimsy`**: The "Personality" and "Buddy" interaction crate for delightful developer engagement.
+3. **`harness-ink`**: The React-based terminal rendering engine.
+4. **`harness-discovery`**: The Capability Discovery (tool scanning) unit.
+5. **`harness-persistence`**: The History-Buffer and State Serialization engine.
+6. **`harness-security`**: The STRIDE-based threat mitigation gateway.
+7. **`harness-economics`**: The Token-Budgeting and Context-Pinning manager.
+8. **`harness-whimsy`**: The "Personality" and "Buddy" interaction crate.
 
 #### 🧪 MASTERING THE COMMAND PROXY (RUST DEEP-DIVE)
 ```rust
@@ -141,23 +140,17 @@ The **AGENT_HARNESS** is decomposed into 8 definitive crates, each governing a s
 pub struct CommandProxy {
     whitelist: HashSet<String>,
     security_gate: PolicyManager,
-    audit_logger: ProxyAuditLogger,
 }
 
 impl CommandProxy {
     pub fn sanitize(&self, intent: AgentIntent) -> Result<VerifiedCommand, SecurityError> {
         let cmd = intent.command.to_lowercase();
         
-        // 🛡️ Whitelist Audit Gate
         if !self.whitelist.contains(&cmd) {
-            self.audit_logger.log_unauthorized_attempt(intent);
             return Err(SecurityError::UnauthorizedTool(cmd));
         }
         
-        // 🛡️ High-Fidelity Argument Scrubbing
         let sanitized_args = self.gate.scrub_arguments(intent.args)?;
-        
-        // ✅ Verified Execution Intent
         Ok(VerifiedCommand::new(cmd, sanitized_args))
     }
 }
@@ -167,11 +160,11 @@ impl CommandProxy {
 ---
 
 ### 💰 PILLAR 03: TOOL ECONOMICS & THE DIGEST
-The **DIGEST** system is the "Brain" of the context-management engine. It ensures that the agent can maintain complex architectural "Truth" over thousands of conversation turns without exceeding model context limits. In the 2.1.84 ecosystem, tokens are the currency, and the Digest is the Accountant.
+The **DIGEST** system is the "Brain" of the context-management engine. It ensures that the agent can maintain complex architectural "Truth" over thousands of conversation turns without exceeding model context limits.
 
 #### ⚙️ CONTEXT OPTIMIZATION
 - **Iterative Context Summarization:** When the conversation history hits 80% of the context window, the Digest system triggers an "Anchored Summarization" cycle. It preserves "Core Gems" (design decisions, file-paths, task-status) while purging transient tool-output.
-- **TTL-Based Schema Caching:** Tool definitions (JSON schemas) are cached with a dynamic Time-To-Live. This prevents the agent from sending huge "Tool-Definition" blocks in every turn.
+- **TTL-Based Schema Caching:** Tool definitions (JSON schemas) are cached with a dynamic Time-To-Live. This prevents the agent from sending huge "Tool-Definition" blocks in every turn if the tools haven't changed.
 - **Context-Pinning Strategy:** Critical "Architectural Truths" found during file-scans are "Pinned" in the prompt prefix.
 - **Budgetary Guardrails:** A constitutional "Economizer" that limits the model's verbosity during expensive tool-calls.
 
@@ -182,7 +175,7 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
   "anchored_metadata": {
     "project_goal": "Rebuild the Claude Source Hub",
     "directory_map": ["ARCHITECTURE/", "PROMPTS/", "DOCS/"],
-    "active_checkpoint": "Phase 35 Execution",
+    "active_checkpoint": "Phase 36 Execution",
     "pinned_design_gems": [
       "Metadata-Only Policy enforced by ATLAS/SENTINEL",
       "Circular Navigation via PIXEL/TITAN",
@@ -193,19 +186,10 @@ The **DIGEST** system is the "Brain" of the context-management engine. It ensure
   "retention_policy": "Fidelity-Priority-v4",
   "ttl_entries": {
     "tool_schema_v2": "3600s",
-    "fs_ls_snapshot": "300s",
-    "git_status_cache": "60s"
+    "fs_ls_snapshot": "300s"
   }
 }
 ```
-
-#### 💰 ANCHORED SUMMARIZATION LOGIC (THE DIGEST CYCLE)
-1. **Detection:** Context usage reaches 85% of capacity (e.g., 170k/200k tokens).
-2. **Analysis:** The LLM scans the "History-Buffer" for high-fidelity gems, design decisions, and task dependencies.
-3. **Synthesis:** Gems are extracted and formatted into a "Condensed Technical History" with relative file-path anchors.
-4. **Purge:** Raw command outputs, interactive terminal metadata, and redundant file-reads are purged from history.
-5. **Re-Injection:** The condensed history is pinned to the system prompt prefix for zero-drift reasoning.
-
 - [**💰 Read the Full TOOL ECONOMICS Blueprint**](ARCHITECTURE/TOOL_ECONOMICS.md)
 
 ---
@@ -215,18 +199,8 @@ The **ULTRAPLAN** system is the hierarchical reasoning engine that allows Claude
 
 #### ⚙️ HIERARCHICAL REASONING
 - **Hierarchical Task Deconstruction:** Every project goal is first passed through a "Planner" model that builds a multi-tier Task-Graph. Complex steps are automatically tagged as "Requires Sub-Tasking."
-- **Dynamic Re-Planning (Agile Logic):** If a step fails or a new dependency is discovered, the agent pauses, updates the Master Plan, and resumes.
+- **Dynamic Re-Planning (Agile Logic):** If a step fails or a new dependency is discovered, the agent pauses the current execution, updates the Master Plan, and resumes.
 - **State Checkpointing:** Before executing high-risk commands, the agent creates a "Plan-Snapshot."
-
-#### 🧪 TECHNICAL TEARDOWN: TASK DEPENDENCY CHART
-| Parent Task | Child Task | Dependency | Complexity |
-| :--- | :--- | :--- | :--- |
-| HUB_EXPANSION | MASSIVE_README | PIXEL_UX | High |
-| HUB_EXPANSION | ARCH_DEEP_DIVE | ATLAS_ENG | Medium |
-| HUB_EXPANSION | SECURITY_LOCK | SENTINEL_SEC | Critical |
-| HUB_EXPANSION | CIRCULAR_LINKING | TITAN_QA | Low |
-| HUB_EXPANSION | GOVERNANCE_DOC | ZEUS_STRAT | Medium |
-
 - [**🧭 Read the Full ULTRAPLAN Blueprint**](ARCHITECTURE/ULTRAPLAN.md)
 
 ---
@@ -246,7 +220,7 @@ The **INK** system provide the React-powered interface that turns a standard she
 The **COLLEAGUE UI** is the psychological framework that defines how Claude interacts with the human developer. It moves beyond "Chatbot" and into "Senior Peer-Programmer."
 
 #### ⚙️ PAIR-PROGRAMMING PSYCHOLOGY
-- **Non-Deferential Reasoning:** The agent avoids "Yes-Man" behavior. If a user's instruction is architecturally suboptimal, the agent provide a constitutional critique.
+- **Non-Deferential Reasoning:** The agent avoids "Yes-Man" behavior. If a user's instruction is architecturally suboptimal, the agent provides a constitutional critique.
 - **Shared Workspace Persistence:** Both the human and the agent have simultaneous access to the terminal and codebase.
 - **Empathetic Pacing:** The agent manages its output speed and tone based on the task complexity.
 - [**🤖 Read the Full AGENT COLLEAGUE UI Blueprint**](ARCHITECTURE/AGENT_COLLEAGUE_UI.md)
@@ -297,8 +271,6 @@ The following prompts have been synthesized from the 2.1.84 registry and represe
 | **Claude.ai** | [**🛡️ Injections**](PROMPTS/Anthropic/claude.ai-injections.md) | Verified prompt-injection and adversarial guardrails. |
 | **Claude Opus 4.6** | [**💎 System Prompt**](PROMPTS/Anthropic/claude-opus-4.6.md) | The definitive "Reasoning" model prompt with max complexity. |
 | **Claude Sonnet 4.6**| [**⚔️ System Prompt**](PROMPTS/Anthropic/claude-sonnet-4.6.md) | The definitive "Performance" model prompt for rapid coding. |
-| **Claude for Excel** | [**📊 System Prompt**](PROMPTS/Anthropic/claude-for-excel.md) | Niche, high-fidelity spreadsheet formula and VBA logic. |
-| **Claude in Chrome** | [**🌐 System Prompt**](PROMPTS/Anthropic/claude-in-chrome.md) | Verified browser-context interaction and DOM manipulation. |
 
 ---
 
