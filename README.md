@@ -28,6 +28,7 @@ Scaling systems for the global developer community.
 - [**🧵 X / TWITTER STRATEGY**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/X_THREAD.md): Deep-dive architectural threads.
 - [**🚀 LINKEDIN ANNOUNCEMENT**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/LINKEDIN_POST.md): Professional high-impact post.
 - [**🤖 REDDIT INFILTRATION**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_STRATEGY.md): Subreddit-specific technical teardowns.
+- [**🌍 REDDIT COMMUNITIES**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/): The global outreach fleet.
 - **[🤫 .ghost_research/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
 
 ---

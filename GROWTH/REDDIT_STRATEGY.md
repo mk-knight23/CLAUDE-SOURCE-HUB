@@ -1,17 +1,18 @@
-# 🧊 REDDIT STRATEGY: Community Infiltration
+# 🧊 REDDIT STRATEGY: Global Community Infiltration
 
 Master the 90/10 Rule: 90% Research Value, 10% Hub Direction. 
 
 ---
 
 ## 🎯 Target Subreddits & Status
-| Subreddit | Community Vibe | Posting Strategy | Status |
+| Subreddit Group | Community Vibe | Posting Strategy | Status |
 | :--- | :--- | :--- | :--- |
-| **r/LocalLLaMA** | Technical, Skeptical | **Architecture Teardown** (The 8 Crates) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_LOCALLAMA.md) |
-| **r/ClaudeAI** | Enthusiastic, Loyal | **Feature Spotlight** (The Spirit of Claude) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_CLAUDEAI.md) |
-| **r/ChatGPTCoding** | Practical, Result-Driven | **Workflow Synthesis** (The Developer Harness) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_CHATGTPCODING.md) |
-| **r/AIAgent** | Visionary, Strategic | **Hierarchical Blueprint** (The Orchestrator) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_AIAGENT.md) |
-| **r/ProgrammerHumor** | Sarcastic, Funny | **Meme Breakdown** (The Forbidden Gacha) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_PROGRAMMERHUMOR.md) |
+| **Agentic Platforms** | Technical, Skeptical | **Architecture Teardown** (The 8 Crates) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/REDDIT_AGENTIC_ORCHESTRATORS.md) |
+| **Automation Hubs** | Strategic, Practical | **Workflow Synthesis** (The Developer Harness) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/REDDIT_WORKFLOW_AUTOMATION.md) |
+| **AI Truth Labs** | Enthusiastic, Loyal | **Feature Spotlight** (The Spirits Behind the Leak) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/REDDIT_AI_TRUTH.md) |
+| **Viral Sensations** | Visionary, Strategic | **Hierarchical Blueprint** (The Orchestrator) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/REDDIT_VIRAL_SENSATIONS.md) |
+| **Meme Lords** | Sarcastic, Funny | **Meme Breakdown** (The Forbidden Gacha) | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/REDDIT_THE_BUDDY_MEME.md) |
+| **Original Fleet** | Legacy Research | **Legacy Teardowns** | [Ready](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/) |
 
 ---
 
@@ -24,9 +25,9 @@ Master the 90/10 Rule: 90% Research Value, 10% Hub Direction.
 ---
 
 ## 🚀 Publication Sequence
-1.  **Day 1 (Value Drop):** Post the **r/LocalLLaMA** teardown. 
-2.  **Day 2 (Story Drop):** Post the **r/ClaudeAI** enthusiasts' feature list.
-3.  **Day 3 (The Meme):** Drop the **r/ProgrammerHumor** gacha-rant.
+1.  **Day 1 (Value Drop):** Post the **Agentic Orchestrators** teardown. 
+2.  **Day 2 (Story Drop):** Post the **AI Truth** feature list.
+3.  **Day 3 (The Meme):** Drop the **Buddy Meme** gacha-rant.
 
 ---
 *Synthesized by PULSE and Kazi's Agent Army.*
