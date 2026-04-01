@@ -1,72 +1,70 @@
-# CLAUDE SOURCE HUB 🛡️
+# 🧊 CLAUDE SOURCE HUB
 
-> **The Definitive, Metadata-Only Archive of the Claude Code Ecosystem.**
-> Curated and Maintained by **Kazi's Agent Army**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](file:///Users/mkazi/Claude-Source-Hub/LICENSE)
+[![Release: 2026.4](https://img.shields.io/badge/Release-2026.4-blue.svg)](https://github.com/mk-knight23/CLAUDE-SOURCE-HUB)
+[![Status: Definitive](https://img.shields.io/badge/Status-Definitive-success.svg)](https://github.com/mk-knight23/CLAUDE-SOURCE-HUB)
 
----
-
-### 📖 [**THE STORY: The 2.1.84 Registry Incident**](file:///Users/mkazi/Claude-Source-Hub/STORY.md)
-Discover the origins of the leak, the 48-hour mobilization, and the vision for the future of liberated agents.
+The definitive, world-class architectural archive of the **Claude Code 2.1.84 ecosystem**. This repository is a metadata-only synthesis of high-fidelity research, system prompts, and community evolution blueprints.
 
 ---
 
-### 🏛️ THE ARCHITECT'S ASCENSION (Golden Gems)
-World-class deep-dives into the architecture behind the blueprints.
-- **[🏗️ AGENT HARNESS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_HARNESS.md):** The 8-layer unified runtime and modular crates.
-- **[⚙️ TOOL ECONOMICS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md):** Schema-driven tool discovery and MCP integration.
-- **[🎨 INK TERMINAL UX](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/INK_TERMINAL_UX.md):** High-fidelity React-for-CLI rendering principles.
-- **[🎭 AGENT COLLEAGUE UI](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_COLLEAGUE_UI.md):** The color-coded persona system (Amethyst, Cinnabar, Emerald).
+## 🏛️ THE STORY
+In early 2026, the **Claude Code 2.1.84 Registry Incident** redefined the boundaries of agentic software engineering. What followed was a 48-hour mobilization where the global developer community synthesized the architectural intelligence behind the leak.
+
+The **CLAUDE SOURCE HUB** is the permanent home for that intelligence.
 
 ---
 
 ## 🧭 NAVIGATION
 - **[🧱 ARCHITECTURE Map](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md):** The Hub's internal directory blueprint.
 - **[🤝 CONTRIBUTING](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md):** Guidelines for metadata-only research.
-### 🚀 GROWTH Suite
-Scaling systems for the global developer community.
-- [**🧊 GMAIL OUTREACH**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/GMAIL_TEMPLATE.md): High-stakes strategic outreach.
-- [**🧵 X / TWITTER STRATEGY**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/X_THREAD.md): Deep-dive architectural threads.
-- [**🚀 LINKEDIN ANNOUNCEMENT**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/LINKEDIN_POST.md): Professional high-impact post.
-- [**🤖 REDDIT INFILTRATION**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_STRATEGY.md): Subreddit-specific technical teardowns.
-- [**🌍 REDDIT COMMUNITIES**](file:///Users/mkazi/Claude-Source-Hub/GROWTH/REDDIT_COMMUNITIES/): The global outreach fleet.
-- **[🤫 .ghost_research/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
+- **[🤫 .GHOST_RESEARCH/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
 
 ---
 
 ## 📈 STAR HISTORY
-[![Star History Chart](https://api.star-history.com/svg?repos=mk-knight23/Claude-Source-Hub&type=Date)](https://star-history.com/#mk-knight23/Claude-Source-Hub&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mk-knight23/CLAUDE-SOURCE-HUB&type=Date)](https://star-history.com/#mk-knight23/CLAUDE-SOURCE-HUB&Date)
 
 ---
 
-## 🎨 GLOBAL SHOWCASE
-[![Ecosystem: Active](https://img.shields.io/badge/Ecosystem-Active-brightgreen)](https://github.com/mk-knight23/Claude-Source-Hub)
-[![Status: Curated](https://img.shields.io/badge/Status-Curated-blue)](LICENSE)
-[![Governance: Agentic](https://img.shields.io/badge/Governance-Agentic-orange)](CONTRIBUTING.md)
+## 🏗️ ARCHITECTURAL PILLARS
 
----
-*Synthesized by ORACLE and PIXEL for the CLAUDE SOURCE HUB.*
-This repository is autonomously curated by a fleet of 10 specialized intelligence agents:
-
-| Agent | Role | Expertise |
+| Pillar | Description | Research File |
 | :--- | :--- | :--- |
-| **ZEUS** | Master Orchestrator | Strategic command and phase management. |
-| **ORACLE** | Lead Researcher | Architectural synthesis and secret discovery. |
-| **ATLAS** | Engineering God | Repository structure and curated porting. |
-| **PIXEL** | Visual Master | Premium design and developer experience interface. |
-| **SENTINEL** | Guard | Security audits and leak compliance. |
+| **Recursive Runtime** | The proactive, always-on heartbeat loop. | [KAIROS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/KAIROS_ALWAYS_ON.md) |
+| **Unified Harness** | The 8-crate high-fidelity agentic orchestrator. | [AGENT_HARNESS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_HARNESS.md) |
+| **Tool Economics** | Schema-driven discovery and digest strategies. | [TOOL_ECONOMICS](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md) |
+| **Ink Terminal UX** | React-powered local shell rendering. | [INK_TERMINAL_UX](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/INK_TERMINAL_UX.md) |
+| **Buddy System** | The secret gacha-style companion logic. | [BUDDY_SYSTEM](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/BUDDY_SYSTEM.md) |
 
 ---
 
-## 📈 Ecosystem Tracker
-| Repository | Stars | Description | Focus |
-| :--- | :--- | :--- | :--- |
-| `instructkr/claw-code` | 64k+ | Premium clean-room Python rewrite. | Evolution |
-| `asgeirtj/system_prompts` | 35k+ | The logic foundation for Claude Code. | Intelligence |
-| `claw-cli/claw-code-rust`| 12k+ | High-performance Rust port. | Engineering |
-| `leaked-claude-code` | 8k+ | The original impact vector. | Historical |
+## 📂 DIRECTORY STRUCTURE
+
+### 🏛️ ARCHITECTURE
+Deep-dive syntheses of the 2.1.84 blueprints.
+- [**🛠️ CORE RUNTIME**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/CORE_RUNTIME.md)
+- [**🧬 AGENT HARNESS**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_HARNESS.md)
+- [**💰 TOOL ECONOMICS**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TOOL_ECONOMICS.md)
+- [**📟 INK TERMINAL UX**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/INK_TERMINAL_UX.md)
+- [**🤖 AGENT COLLEAGUE UI**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/AGENT_COLLEAGUE_UI.md)
+
+### 🧊 PROMPTS
+The synthesized library of identity and safety guardrails.
+- [**🟣 CLAUDE CODE**](file:///Users/mkazi/Claude-Source-Hub/PROMPTS/Anthropic/claude-code.md)
+- [**🔵 CLAUDE CO-WORK**](file:///Users/mkazi/Claude-Source-Hub/PROMPTS/Anthropic/claude-cowork.md)
+- [**🛡️ TENGU FLAGS**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE/TENGU_FLAGS.md)
+
+### 🏛️ REPOSITORY GOVERNANCE
+Professional, Metadata-Only Research Archive.
+- [**🧱 ARCHITECTURE Map**](file:///Users/mkazi/Claude-Source-Hub/ARCHITECTURE.md): The Hub's internal directory blueprint.
+- [**🤝 CONTRIBUTING**](file:///Users/mkazi/Claude-Source-Hub/CONTRIBUTING.md): Guidelines for metadata-only research.
+- **[🤫 .GHOST_RESEARCH/](file:///Users/mkazi/Claude-Source-Hub/.ghost_research/):** The hidden scanning engine (Agents Only).
 
 ---
-> [!NOTE]
-> This repository is a **Metadata and Showcase Hub**. We do not host original `.ts` or `.js` source code from the leak. Our focus is on documentation, clean-room evolution, and community analysis.
 
-© 2026 Claude Source Hub Contributors | Powered by Kazi's Agent Army
+## 📜 LICENSE
+Creative Commons / MIT Metadata License. See [LICENSE](file:///Users/mkazi/Claude-Source-Hub/LICENSE) for details.
+
+---
+*Curated by Kazi's Agent Army and the Global Developer Community.*
