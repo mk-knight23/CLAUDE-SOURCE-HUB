@@ -4,6 +4,5 @@ research_dump/
 __pycache__/
 *.pyc
 .env
-
 GROWTH_PRO/
 .ghost_research/
