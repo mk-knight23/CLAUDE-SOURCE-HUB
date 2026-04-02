@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Advisory \ Claude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .article-header { padding: 120px 0 60px; text-align: left; }
+        .article-header h1 { font-family: 'Poppins', sans-serif; font-size: 4rem; line-height: 1.1; margin-bottom: 32px; font-weight: 500; letter-spacing: -0.02em; }
+        .article-meta { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--text-secondary); }
+        .article-body { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+        .article-body p { font-size: 1.35rem; line-height: 1.6; margin-bottom: 32px; color: #1d1d19; }
+        .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin: 64px 0 32px; font-weight: 500; }
+        .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; margin: 40px 0 20px; font-weight: 500; }
+        .warning-box { background: #fff5f5; border: 1px solid #ffcfcf; padding: 32px; border-radius: 8px; margin: 48px 0; color: #c53030; font-family: 'Poppins', sans-serif; }
+        .warning-box h4 { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9rem; margin-bottom: 16px; }
+        .warning-box p { color: inherit !important; font-size: 1.2rem !important; margin-bottom: 0 !important; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Claude Source Hub</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">News</a>
+                <a href="https://claude.ai" class="nav-cta">Try Claude</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="eyebrow">Security \ March 31, 2026</span>
+            <h1>Critical Advisory: The npm Supply-Chain Attack</h1>
+            <div class="article-meta">
+                <span>By SENTINEL</span>
+                <span>•</span>
+                <span>6 min read</span>
+            </div>
+        </header>
+
+        <div class="article-body">
+            <p>On March 31, 2026, the simultaneous occurrence of the Claude Code source leak and a sophisticated supply-chain attack on the npm registry created a high-risk environment for AI engineers. This advisory provides a comprehensive breakdown of the incident and immediate mitigation steps.</p>
+
+            <div class="warning-box">
+                <h4>🛑 Critical Exposure</h4>
+                <p>During the window of 00:21–03:29 UTC, malicious versions of the <code>axios</code> package containing a Remote Access Trojan (RAT) were active on the npm registry.</p>
+            </div>
+
+            <h2>The Attack Vector</h2>
+            <p>The attackers leveraged the sudden influx of interest in Claude Code research to publish a compromised version of the popular `axios` HTTP library (versions 1.14.1 and 0.30.4). This malicious build included an unauthorized dependency on `plain-crypto-js`, which served as a payload delivery mechanism.</p>
+
+            <h3>Infected Installations</h3>
+            <p>Any user who initialized a new Claude Code environment or updated their dependencies during this three-hour window likely received the RAT-injected package. The trojan was designed to exfiltrate session tokens, SSH keys, and `.env` files from the host system.</p>
+
+            <h2>Anthropic's Response</h2>
+            <p>Anthropic responded by immediately deprecating the npm distribution channel for the Claude Code CLI. To protect the developer community, the company migrated to a native installer that bypasses npm entirely.</p>
+
+            <div class="code-block" style="background: #1d1d19; color: #6a9bcc; border-color: #2a2a29;">
+                # Verified Native Installation Command<br>
+                curl -fsSL https://claude.ai/install.sh | bash
+            </div>
+
+            <h2>Immediate Remediation</h2>
+            <p>If your `package-lock.json` or `yarn.lock` references `axios` 1.14.1, 0.30.4, or `plain-crypto-js`, your system must be treated as fully compromised.</p>
+
+            <ul>
+                <li><strong>Rotate Credentials:</strong> All API keys, database passwords, and cloud access tokens must be rotated immediately.</li>
+                <li><strong>System Wipe:</strong> Perform a clean reinstall of the operating system and restore data from a verified backup.</li>
+                <li><strong>Audit Access:</strong> Review logs for any unauthorized logins or data exfiltration from your cloud providers.</li>
+            </ul>
+
+            <p>The Claude Source Hub remains a safe environment for architectural research, but we urge all developers to prioritize supply-chain security by verifying hashes and pinning dependencies to known safe versions.</p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kazi's Agent Army. Metadata-Only Archive.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

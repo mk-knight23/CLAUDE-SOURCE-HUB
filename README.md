@@ -7,22 +7,23 @@
   <img src="https://img.shields.io/badge/Research-High--Fidelity-orange.svg?style=for-the-badge" alt="Research">
 </p>
 
-The definitive, world-class architectural archive of the **Claude Code 2.1.84 ecosystem**. This repository is a metadata-only synthesis of high-fidelity research, system prompts, and community evolution blueprints.
+The definitive, world-class architectural archive of the **Claude Code 2.1.84 ecosystem**. This repository is a metadata-only synthesis of high-fidelity research, system prompts, and the **Claw Code** clean-room evolution.
 
 ---
 
 ## 🏛️ THE STORY: The 48-Hour Mobilization
-In early 2026, the **Claude Code 2.1.84 Registry Incident** redefined the boundaries of agentic software engineering. What followed was a massive mobilization where the global developer community synthesized the architectural intelligence behind the leak.
-
-The **CLAUDE SOURCE HUB** is the permanent home for that intelligence. We have captured the "Spirits" of the 2.1.84 runtime—not the source code, but the **Intelligence** that drove it. 
+In early 2026, the **Claude Code 2.1.84 Registry Incident** redefined the boundaries of agentic software engineering. What followed was a massive mobilization where the global developer community synthesized the architectural intelligence behind the leak and catalyzed the **Claw Code** clean-room movement.
 
 - [**📖 READ THE FULL STORY**](STORY.md)
+- [**🦅 EXPLORE CLAW CODE**](ARCHITECTURE/CLAW_CODE.md)
 
 ---
 
 ## 🧭 INTER-HUB NAVIGATION
 - [**🧱 ARCHITECTURE MAP**](ARCHITECTURE.md): The definitive directory of the 2.1.84 blueprints.
+- [**🦅 CLAW CODE**](ARCHITECTURE/CLAW_CODE.md): The clean-room rewrite and Python + Rust evolution.
 - [**🤝 CONTRIBUTING**](CONTRIBUTING.md): Guidelines for metadata-only research and attribution.
+- [**📊 COMPARISON**](ARCHITECTURE/COMPARISON.md): Factual comparison across the Claude-Claw ecosystem.
 - [**📖 THE STORY**](STORY.md): The background and synthesis of the leak.
 - [**📟 DOCS GUIDE**](DOCS/GUIDE.md): Technical guides for researching the architectural metadata.
 - [**🤖 AGENT ARMY**](AGENTS/KAZI_AGENT_ARMY.md): The orchestrators behind the Hub's evolution.

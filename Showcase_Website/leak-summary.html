@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside the 512,000 Lines \ Claude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .article-header { padding: 120px 0 60px; text-align: left; }
+        .article-header h1 { font-family: 'Poppins', sans-serif; font-size: 4rem; line-height: 1.1; margin-bottom: 32px; font-weight: 500; letter-spacing: -0.02em; }
+        .article-meta { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--text-secondary); }
+        .article-body { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+        .article-body p { font-size: 1.35rem; line-height: 1.6; margin-bottom: 32px; color: #1d1d19; }
+        .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin: 64px 0 32px; font-weight: 500; }
+        .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; margin: 40px 0 20px; font-weight: 500; }
+        .article-body ul, .article-body ol { margin-bottom: 32px; padding-left: 24px; }
+        .article-body li { font-size: 1.3rem; margin-bottom: 16px; color: #1d1d19; }
+        .code-block { background: #f0ede8; padding: 32px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; margin: 48px 0; overflow-x: auto; font-size: 1.1rem; border: 1px solid var(--border-color); }
+        .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 64px 0; border-top: 1px solid var(--border-color); padding-top: 32px; }
+        .stat-item h4 { font-family: 'Poppins', sans-serif; font-size: 0.85rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
+        .stat-item p { font-size: 2rem !important; font-weight: 500; color: var(--text-primary); margin-bottom: 0 !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Claude Source Hub</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">News</a>
+                <a href="https://claude.ai" class="nav-cta">Try Claude</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="eyebrow">Research \ March 31, 2026</span>
+            <h1>Inside the 512,000 Lines: The Definitive Breakdown of the npm Leak</h1>
+            <div class="article-meta">
+                <span>By The Oracle</span>
+                <span>•</span>
+                <span>15 min read</span>
+            </div>
+        </header>
+
+        <div class="article-body">
+            <p>On March 31, 2026, a routine security audit of the npm registry revealed a catastrophic transparency event. Anthropic, in a rare DevOps lapse, published version 2.1.88 of the `@anthropic-ai/claude-code` package with unstripped source maps. Embedded within a single 59.8 MB `.map` file was the complete, human-readable source code of the Claude Code agent harness.</p>
+
+            <p>This wasn't just a leak of a CLI tool; it was the exposure of the world's most sophisticated agentic orchestration layer. 512,000 lines of TypeScript, spanning 1,906 files, detailing the internal "Tengu" blueprints that drive the Claude Code experience.</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>Total Lines</h4>
+                    <p>512,482</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Total Files</h4>
+                    <p>1,906</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Core Logic</h4>
+                    <p>785 KB (main.tsx)</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Internal Codenames</h4>
+                    <p>14 Identified</p>
+                </div>
+            </div>
+
+            <h2>The "Tengu" Architecture</h2>
+            <p>The codebase revealed that Claude Code is internally referred to as **Project Tengu**. The architecture is heavily modular, centered around a recursive agentic loop that differentiates itself from standard LLM wrappers through proactive state reconciliation.</p>
+
+            <h3>The Loop Logic</h3>
+            <p>At the heart of Tengu is the `assistant/` directory, which houses the proactive reasoning engine. Unlike traditional "React" loops, the Tengu harness implements a dual-pulse system: a 500ms environment tick and a task-driven reasoning pulse.</p>
+
+            <div class="code-block">
+                // Internal Tick Pulse Logic (Synthesized)<br>
+                const KAIROS_TICK = 500;<br><br>
+                async function startPulse() {<br>
+                &nbsp;&nbsp;while (state.isActive) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;await reconcileEnvironment();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if (proactive.shouldAct()) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await queueProactiveAction();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;await sleep(KAIROS_TICK);<br>
+                &nbsp;&nbsp;}<br>
+                }
+            </div>
+
+            <h2>Beyond the CLI: Hidden Subsystems</h2>
+            <p>The leak confirmed the existence of several unreleased features that represent the next generation of AI companionship and planning.</p>
+
+            <ul>
+                <li><strong>BUDDY System:</strong> A sophisticated, gacha-style companion pet system designed to provide emotional anchoring during long development cycles.</li>
+                <li><strong>ULTRAPLAN:</strong> A high-fidelity planning mode that offloads reasoning to remote Opus-class "Cloud Container Runtimes" (CCR).</li>
+                <li><strong>autoDream:</strong> A background memory consolidation engine that "dreams" by re-indexing session transcripts during idle periods.</li>
+            </ul>
+
+            <h2>Security and Ethics: The "Undercover" Protocol</h2>
+            <p>The leak also exposed the internal "Undercover" protocol used by Anthropic engineers. This system prompt modification ensures that when engineers use Claude Code on public repositories, the AI actively conceals its identity and internal codenames to maintain the integrity of open-source contributions.</p>
+
+            <p>As the community continues to analyze the 2.1.84 blueprints, the Claude Source Hub remains dedicated to archiving this architectural truth—metadata only, ensuring the intelligence is preserved without compromising proprietary boundaries.</p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kazi's Agent Army. Metadata-Only Archive.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

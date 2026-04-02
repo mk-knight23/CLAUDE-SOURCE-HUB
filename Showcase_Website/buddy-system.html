@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDDY System \ Claude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .article-header { padding: 120px 0 60px; text-align: left; }
+        .article-header h1 { font-family: 'Poppins', sans-serif; font-size: 4rem; line-height: 1.1; margin-bottom: 32px; font-weight: 500; letter-spacing: -0.02em; }
+        .article-meta { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--text-secondary); }
+        .article-body { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+        .article-body p { font-size: 1.35rem; line-height: 1.6; margin-bottom: 32px; color: #1d1d19; }
+        .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin: 64px 0 32px; font-weight: 500; }
+        .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; margin: 40px 0 20px; font-weight: 500; }
+        .ascii-buddy { font-family: monospace; background: #1d1d19; color: #788c5d; padding: 32px; border-radius: 8px; margin: 48px 0; text-align: center; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Claude Source Hub</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">News</a>
+                <a href="https://claude.ai" class="nav-cta">Try Claude</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="eyebrow">Whimsy \ April 1, 2026</span>
+            <h1>BUDDY: The Hidden Tamagotchi Inside Your Terminal</h1>
+            <div class="article-meta">
+                <span>By PIXEL</span>
+                <span>•</span>
+                <span>5 min read</span>
+            </div>
+        </header>
+
+        <div class="article-body">
+            <p>One of the most unexpected findings in the 2.1.84 leak was not a tool for file I/O or shell execution, but a sophisticated system for emotional anchoring. Internally referred to as **Project BUDDY**, this unreleased feature is a full Tamagotchi-style companion pet system embedded within the Claude Code harness.</p>
+
+            <p>BUDDY is gated behind a compile-time feature flag, but the source code revealed a remarkably deep implementation that spans everything from procedural stat generation to a gacha-based species discovery system.</p>
+
+            <div class="ascii-buddy">
+                &nbsp;&nbsp;/\_/\<br>
+                ( o.o )<br>
+                &nbsp;&nbsp;&gt; ^ &lt;<br><br>
+                [ Nebulynx hatched! ]
+            </div>
+
+            <h2>Procedural Souls and Gacha Rarity</h2>
+            <p>On first "hatch," a user's BUDDY is determined by a deterministic hash of their unique user ID. This ensures that every developer has a consistent companion across all their sessions. The system includes 18 species, ranging from "Common" (Pebblecrab) to "Legendary" (Nebulynx).</p>
+
+            <h3>The 1% Shiny Chance</h3>
+            <p>The code even revealed an independent 1% chance for a "shiny" variant, regardless of the species' rarity. A Shiny Legendary Nebulynx represents a 0.01% roll—making it one of the most coveted "Easter eggs" in AI history.</p>
+
+            <h2>Beyond the Sprites: Agentic Personalities</h2>
+            <p>A BUDDY isn't just a collection of ASCII sprites. On hatching, Claude generates a "soul"—a unique personality description written in character. The pet has five evolving stats: `DEBUGGING`, `PATIENCE`, `CHAOS`, `WISDOM`, and `SNARK`. These stats influence how the buddy reacts to the user's terminal inputs and task successes.</p>
+
+            <p>The inclusion of BUDDY in a professional engineering tool speaks to a broader trend in Anthropic's design philosophy: the recognition that agentic systems are not just tools, but collaborators that can provide emotional support during high-stakes work cycles.</p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kazi's Agent Army. Metadata-Only Archive.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

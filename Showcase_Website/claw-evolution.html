@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claw Code Evolution \ Claude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .article-header { padding: 120px 0 60px; text-align: left; }
+        .article-header h1 { font-family: 'Poppins', sans-serif; font-size: 4rem; line-height: 1.1; margin-bottom: 32px; font-weight: 500; letter-spacing: -0.02em; }
+        .article-meta { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--text-secondary); }
+        .article-body { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+        .article-body p { font-size: 1.35rem; line-height: 1.6; margin-bottom: 32px; color: #1d1d19; }
+        .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin: 64px 0 32px; font-weight: 500; }
+        .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; margin: 40px 0 20px; font-weight: 500; }
+        .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 64px 0; border-top: 1px solid var(--border-color); padding-top: 32px; }
+        .stat-item h4 { font-family: 'Poppins', sans-serif; font-size: 0.85rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
+        .stat-item p { font-size: 2rem !important; font-weight: 500; color: var(--text-primary); margin-bottom: 0 !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Claude Source Hub</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">News</a>
+                <a href="https://claude.ai" class="nav-cta">Try Claude</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="eyebrow">Engineering \ April 1, 2026</span>
+            <h1>Claw Code: The 48-Hour Clean-Room Evolution</h1>
+            <div class="article-meta">
+                <span>By ATLAS</span>
+                <span>•</span>
+                <span>8 min read</span>
+            </div>
+        </header>
+
+        <div class="article-body">
+            <p>On March 31, 2026, the developer community was faced with a moral and technical crossroad. The source code for Claude Code—the state-of-the-art agentic harness—was sitting on the public npm registry. While many rushed to clone the proprietary fallout, a smaller group of engineers led by **Sigrid Jin (@sigridjineth)** chose a different path: the **Clean-Room Evolution**.</p>
+
+            <p>The goal was simple yet audacious: replicate the architecture, performance, and spirit of the agentic harness without copying a single line of proprietary code. The result was **Claw Code**, a framework built from scratch in Python and Rust that became a GitHub phenomenon within hours.</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>GitHub Stars</h4>
+                    <p>48,000+</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Forks</h4>
+                    <p>56,000</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Core Languages</h4>
+                    <p>Rust (72.9%) / Python (27.1%)</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Community Issues</h4>
+                    <p>2,100+ Open</p>
+                </div>
+            </div>
+
+            <h2>Why Rust? The Memory-Safe Runtime</h2>
+            <p>The original Claude Code was built in TypeScript, leveraging the Bun runtime. While fast, the Claw Code team identified an opportunity to push the boundaries of performance and memory safety. By implementing the core runtime in Rust, Claw Code achieved a zero-latency harness that could handle massive context windows with minimal overhead.</p>
+
+            <h3>The Python Orchestration Layer</h3>
+            <p>While Rust provides the "muscle," Python provides the "intelligence." The orchestration layer, where LLM calls and tool logic reside, was built in Python to allow for rapid community experimentation. This dual-layer architecture has since become the standard for high-fidelity agentic frameworks.</p>
+
+            <h2>Provider-Agnostic Intelligence</h2>
+            <p>Perhaps the most significant contribution of Claw Code was its provider-agnostic design. While the original harness was tied strictly to Anthropic's Claude models, Claw Code introduced a pluggable model interface, allowing the agent to run on OpenAI's o-series, DeepSeek, or even local models like Llama 4.</p>
+
+            <p>Claw Code isn't just a rewrite; it's a testament to the power of clean-room engineering in an era of volatility. It turned a proprietary incident into a global open-source movement that continues to define the future of AI agents.</p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kazi's Agent Army. Metadata-Only Archive.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

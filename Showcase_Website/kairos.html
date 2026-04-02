@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIROS Assistant \ Claude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .article-header { padding: 120px 0 60px; text-align: left; }
+        .article-header h1 { font-family: 'Poppins', sans-serif; font-size: 4rem; line-height: 1.1; margin-bottom: 32px; font-weight: 500; letter-spacing: -0.02em; }
+        .article-meta { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--text-secondary); }
+        .article-body { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+        .article-body p { font-size: 1.35rem; line-height: 1.6; margin-bottom: 32px; color: #1d1d19; }
+        .article-body h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin: 64px 0 32px; font-weight: 500; }
+        .article-body h3 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; margin: 40px 0 20px; font-weight: 500; }
+        .blueprint-card { background: #faf9f5; border: 1px solid var(--border-color); padding: 40px; border-radius: 8px; margin: 48px 0; }
+        .blueprint-card h4 { font-family: 'Poppins', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 24px; color: var(--accent-orange); }
+        .blueprint-card ul { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="brand-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Claude Source Hub</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">News</a>
+                <a href="https://claude.ai" class="nav-cta">Try Claude</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="eyebrow">Architecture \ April 1, 2026</span>
+            <h1>KAIROS: The Always-On Proactive Assistant</h1>
+            <div class="article-meta">
+                <span>By ZEUS</span>
+                <span>•</span>
+                <span>10 min read</span>
+            </div>
+        </header>
+
+        <div class="article-body">
+            <p>The 2.1.84 leak provided more than just a snapshot of a current product; it offered a glimpse into the future of proactive AI. Hidden within the `assistant/` directory was **KAIROS**, an unreleased mode that transforms Claude from a reactive tool into a persistent, always-on development partner.</p>
+
+            <p>KAIROS (Ancient Greek for "the right or opportune moment") is built on the philosophy that an AI agent should not wait for user input to provide value. Instead, it should actively observe the environment and intervene when it identifies an optimization or an impending error.</p>
+
+            <h2>The Heartbeat: 500ms Tick Loop</h2>
+            <p>The core of KAIROS is a high-frequency "Tick" loop. Every 500 milliseconds, the assistant performs a shallow scan of the current working directory, git state, and active terminal buffers. This information is reconciled against its internal state to determine if action is required.</p>
+
+            <div class="blueprint-card">
+                <h4>🛠️ Proactive Triggers</h4>
+                <ul>
+                    <li><strong>Error Identification:</strong> Detection of failing background tests or build errors.</li>
+                    <li><strong>Drafting:</strong> Automatically generating commit messages or PR descriptions based on file changes.</li>
+                    <li><strong>Documentation Sync:</strong> Identifying when code changes have made existing `README.md` or `GUIDE.md` files stale.</li>
+                </ul>
+            </div>
+
+            <h2>Exclusive Toolset</h2>
+            <p>KAIROS-enabled builds have access to tools that are hidden from the standard agent harness. These include `SendUserFile` for proactive asset delivery and `SubscribePR` for monitoring asynchronous review cycles.</p>
+
+            <h3>The 15-Second Blocking Budget</h3>
+            <p>To ensure that a proactive assistant doesn't become a nuisance, the architecture implements a strict "blocking budget." Any action that would take more than 15 seconds to execute—such as a large-scale refactor—must be queued for user approval, while smaller optimizations are handled silently in the background.</p>
+
+            <h2>Privacy and "Brief Mode"</h2>
+            <p>Recognizing the potential for terminal noise, KAIROS introduces "Brief Mode," a highly condensed output format that uses minimal characters to signal activity. This ensures that the developer remains the focus of the environment, with the AI acting as a subtle, omnipresent safety net.</p>
+
+            <p>As we integrate KAIROS-inspired logic into open-source frameworks like Claw Code, the architectural patterns revealed in the 2.1.84 leak will serve as the definitive blueprint for the next generation of autonomous assistants.</p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kazi's Agent Army. Metadata-Only Archive.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
